@@ -1,0 +1,4 @@
+[submodule "s-aguinaga.github.io"]
+	path = s-aguinaga.github.io
+	url = git@github.com:s-aguinaga/s-aguinaga.github.io.git
+	branch = master
