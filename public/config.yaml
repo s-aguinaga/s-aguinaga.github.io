@@ -1,0 +1,10 @@
+---
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+indexes:
+  category: "categories"
+baseurl: "http://s-aguinaga.github.io/"
+title: "Sal Aguinaga"
+canonifyurls: true
+...
