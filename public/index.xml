@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sal Aguinaga</title>
-    <link>http://www.nd.edu/~saguinag/</link>
+    <link>http://s-aguinaga.github.io/</link>
     <description>Recent content on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Sep 2016 13:00:35 -0400</lastBuildDate>
-    <atom:link href="http://www.nd.edu/~saguinag/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://s-aguinaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>4th Heidelberg Laureate Forum</title>
-      <link>http://www.nd.edu/~saguinag/post/hlf/</link>
+      <link>http://s-aguinaga.github.io/post/hlf/</link>
       <pubDate>Mon, 26 Sep 2016 13:00:35 -0400</pubDate>
       
-      <guid>http://www.nd.edu/~saguinag/post/hlf/</guid>
+      <guid>http://s-aguinaga.github.io/post/hlf/</guid>
       <description>&lt;p&gt;I had an extraordinary opportunity to participate as a young researcher in
 this year&amp;rsquo;s 4th Heidelberg Laureate Forum (Heidelberg, Germany). I came away
 having talked one-on-one with several Turin Award Winners and one Nobel Laureate&lt;/p&gt;
@@ -25,10 +25,10 @@ having talked one-on-one with several Turin Award Winners and one Nobel Laureate
     
     <item>
       <title>Welcome</title>
-      <link>http://www.nd.edu/~saguinag/post/welcome/</link>
+      <link>http://s-aguinaga.github.io/post/welcome/</link>
       <pubDate>Sun, 28 Aug 2016 07:07:23 -0400</pubDate>
       
-      <guid>http://www.nd.edu/~saguinag/post/welcome/</guid>
+      <guid>http://s-aguinaga.github.io/post/welcome/</guid>
       <description>&lt;p&gt;This is somehting&lt;/p&gt;
 </description>
     </item>
