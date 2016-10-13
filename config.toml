@@ -123,7 +123,3 @@ paginate = 10
 	url  = "post/"
 	weight = 10
 
-[[menu.main]]
-	name = "CV"
-	url  = "pages/Sept2016_saguinaga_cv.pdf"
-	weight = 1
