@@ -1,9 +1,0 @@
-<section id="one">
-	<header class="major">
-		{{ with .Site.Params.news.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-	</header>
-	{{ with .Site.Params.news.content3 }} {{ . | markdownify }} {{ end }}
-	{{ with .Site.Params.news.content2 }}	{{ . | markdownify }} {{ end }}
-	{{ with .Site.Params.news.content1 }}	{{ . | markdownify }} {{ end }}
-	{{ with .Site.Params.news.content0 }}	{{ . | markdownify }} {{ end }}
-</section>
