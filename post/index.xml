@@ -6,8 +6,138 @@
     <description>Recent content in Posts on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Sep 2016 13:00:35 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 13 Nov 2016 06:53:43 -0500</lastBuildDate>
     <atom:link href="http://s-aguinaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>learning and working with deep nn</title>
+      <link>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</link>
+      <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
+      <description>
+
+&lt;h2 id=&#34;setting-up-dev-machine&#34;&gt;Setting Up Dev Machine&lt;/h2&gt;
+
+&lt;h3 id=&#34;working-locally&#34;&gt;Working Locally&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://amaral.northwestern.edu/resources/guides/mounting-remote-folder-os-x-over-ssh&#34;&gt;Mounting remote folder on OS X over SSH&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;TensorFlow working on a Mac OS X(sierra) with Jupyter and Python3&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew install python3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Warning: Building python3 from source:
+The bottle needs the Apple Command Line Tools to be installed.
+You can install them, if desired, with: &lt;code&gt;xcode-select --install&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://joebergantine.com/blog/2015/apr/30/installing-python-2-and-python-3-alongside-each-ot/&#34;&gt;http://joebergantine.com/blog/2015/apr/30/installing-python-2-and-python-3-alongside-each-ot/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Getting jupyter working with py3 isn&amp;rsquo;t woking so I&amp;rsquo;ve had to research and follow
+these instructions:
+&lt;a href=&#34;http://ipython.readthedocs.io/en/stable/install/kernel_install.html&#34;&gt;http://ipython.readthedocs.io/en/stable/install/kernel_install.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt; # To activate this environment, use:
+ # &amp;gt; source activate ipykernel_py3
+ #
+ # To deactivate this environment, use:
+ # &amp;gt; source deactivate ipykernel_py3
+ #
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;working-locally-on-mac-os&#34;&gt;Working locally on Mac OS&lt;/h4&gt;
+
+&lt;p&gt;To set it up here is what I had to do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;saguinag@sailntrpy:~$ pip install --upgrade pip
+Collecting pip
+  Downloading pip-9.0.1-py2.py3-none-any.whl (1.3MB)
+    100% |████████████████████████████████| 1.3MB 971kB/s
+Installing collected packages: pip
+  Found existing installation: pip 9.0.0
+    Uninstalling pip-9.0.0:
+      Successfully uninstalled pip-9.0.0
+Successfully installed pip-9.0.1
+saguinag@sailntrpy:~$ sudo -H pip install --upgrade virtualenv
+Requirement already up-to-date: virtualenv in /usr/local/lib/python3.5/site-packages
+saguinag@sailntrpy:~$ $ virtualenv --system-site-packages ~/tensorflow
+
+
+~$ which virtualenv
+	/usr/local/bin/virtualenv
+
+virtualenv --system-site-packages ~/tensorflow
+	Using base prefix &#39;/usr/local/Cellar/python3/3.5.2_3/Frameworks/Python.framework/Versions/3.5&#39;
+	New python executable in /Users/saguinag/tensorflow/bin/python3.5
+	Not overwriting existing python script /Users/saguinag/tensorflow/bin/python (you must use /Users/saguinag/tensorflow/bin/python3.5)
+	Installing setuptools, pip, wheel...done.
+
+source ~/tensorflow/bin/activate
+(tensorflow) saguinag@sailntrpy:~$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;connect-to-dsgx&#34;&gt;Connect to DSGx&lt;/h3&gt;
+
+&lt;p&gt;If it applies, first connect via VPN. Using the following
+command mount DSGx locally (on Mac OS X):
+&lt;code&gt;sshfs -o IdentityFile=~/.ssh/id_rsa&lt;/code&gt;
+    &lt;code&gt;username@dsg2.crc.nd.edu:/home/username/ /local/Vol/working_dir/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;But this doesn&amp;rsquo;t work with virtualenv, so login via ssh to dsgx (!! this might not be entirely true.)&lt;/p&gt;
+
+&lt;p&gt;To umount do:
+    &lt;code&gt;umount -f DIR/&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.python-guide.org/en/latest/dev/virtualenvs/&#34;&gt;To work with virtualenv &lt;code&gt;ssh dsgx&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;virtualenv -p /usr/bin/python2.7 venv/&lt;/code&gt;
+&lt;code&gt;source venv/bin/activate&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;with-dsg2-and-tensorflow-using-virtualenv&#34;&gt;With DSG2 and Tensorflow using virtualenv&lt;/h4&gt;
+
+&lt;p&gt;Got it to work on DSG2:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; 513  virtualenv --system-site-packages ~/tensorflow
+  514  source ~/tensorflow/bin/activate
+  515  export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc2-cp27-none-linux_x86_64.whl
+  516  pip install --upgrade $TF_BINARY_URL
+  517  python
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;tensorflow&#34;&gt;TensorFlow&lt;/h2&gt;
+
+&lt;p&gt;Links to &lt;a href=&#34;https://www.tensorflow.org/versions/r0.11/tutorials/index.html&#34;&gt;tensorflow tutorials&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ToDo: Need to install it locally for now&lt;/p&gt;
+
+&lt;p&gt;The working directory is &lt;code&gt;/Volumes/theory/entropy/DeepLerning&lt;/code&gt;. Go into this directory
+and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp;amp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;basic-test&#34;&gt;Basic Test&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow&#34;&gt;TensorFlow Site&lt;/a&gt; Done&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation&#34;&gt;Run a TensorFlow demo model&lt;/a&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;feed-forward-neural-network&#34;&gt;feed-forward neural network&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>recurrent neural networks</title>
+      <link>http://s-aguinaga.github.io/post/recurrent-neural-networks/</link>
+      <pubDate>Sun, 13 Nov 2016 06:39:37 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/post/recurrent-neural-networks/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>4th Heidelberg Laureate Forum</title>

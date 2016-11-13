@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+
+<!-- 
+Strata by HTML5 UP
+html5up.net | @n33co
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>learning and working with deep nn &middot; Sal Aguinaga</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Sal Aguinaga">
+    	<meta name="description" content="Describe your website">
+    	<meta http-equiv="content-language" content="en-us" />
+
+		<meta name="generator" content="Hugo 0.16" />
+
+		<!--[if lte IE 8]><script src='{{ .Site.BaseURL }}js/ie/html5shiv.js'></script><![endif]-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="http://s-aguinaga.github.io/css/main.css" />
+		<!--[if lte IE 8]><link rel='stylesheet' href='{{ .Site.BaseURL }}/css/ie8.css' /><![endif]-->
+
+		
+	</head>
+
+	<body id="top">
+		<!-- Header -->
+<header id="header">
+	<a href="http://s-aguinaga.github.io/" class="image avatar"><img src="http://s-aguinaga.github.io/images/avatar.jpg" alt="" /></a>
+	
+		<h1>PhD student in CS interested in statistical modeling, machine learning, nlp, graph and information theory.</h1>
+	
+
+	
+		<nav id="sidebar">
+			<ul>
+			
+				<li><a href="http://s-aguinaga.github.io/">Home</a></li>
+			
+				<li><a href="http://s-aguinaga.github.io/post/">Blog</a></li>
+			
+			</ul>
+		</nav>
+	
+</header>
+
+
+		<!-- Main -->
+		<div id="main">
+			
+	<h1>learning and working with deep nn</h1>
+	<span>
+	    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
+	    <time datetime="2016-11-13 06:53:43 -0500 EST">2016-11-13</time>&nbsp;&nbsp;
+
+	    
+	        
+	        
+	    
+
+	    
+	       
+	       
+	           &nbsp;&nbsp;<i class="fa fa-tags"></i>&nbsp;&nbsp;
+	           
+	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/neural-networks">neural networks</a>
+	           &middot;
+	           
+	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/artifical">artifical</a>
+	           &middot;
+	           
+	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/recurrent">recurrent</a>
+	           &middot;
+	           
+	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/deep">deep</a>
+	           
+	           
+	       
+	    
+	</span>
+
+	<p>
+	    
+
+<h2 id="setting-up-dev-machine">Setting Up Dev Machine</h2>
+
+<h3 id="working-locally">Working Locally</h3>
+
+<ul>
+<li><p><a href="https://amaral.northwestern.edu/resources/guides/mounting-remote-folder-os-x-over-ssh">Mounting remote folder on OS X over SSH</a></p></li>
+
+<li><p>TensorFlow working on a Mac OS X(sierra) with Jupyter and Python3</p>
+
+<ul>
+<li><code>brew install python3</code></li>
+<li>Warning: Building python3 from source:
+The bottle needs the Apple Command Line Tools to be installed.
+You can install them, if desired, with: <code>xcode-select --install</code></li>
+</ul></li>
+
+<li><p><a href="http://joebergantine.com/blog/2015/apr/30/installing-python-2-and-python-3-alongside-each-ot/">http://joebergantine.com/blog/2015/apr/30/installing-python-2-and-python-3-alongside-each-ot/</a></p></li>
+
+<li><p>Getting jupyter working with py3 isn&rsquo;t woking so I&rsquo;ve had to research and follow
+these instructions:
+<a href="http://ipython.readthedocs.io/en/stable/install/kernel_install.html">http://ipython.readthedocs.io/en/stable/install/kernel_install.html</a></p></li>
+</ul>
+
+<pre><code> # To activate this environment, use:
+ # &gt; source activate ipykernel_py3
+ #
+ # To deactivate this environment, use:
+ # &gt; source deactivate ipykernel_py3
+ #
+</code></pre>
+
+<h4 id="working-locally-on-mac-os">Working locally on Mac OS</h4>
+
+<p>To set it up here is what I had to do:</p>
+
+<pre><code>saguinag@sailntrpy:~$ pip install --upgrade pip
+Collecting pip
+  Downloading pip-9.0.1-py2.py3-none-any.whl (1.3MB)
+    100% |████████████████████████████████| 1.3MB 971kB/s
+Installing collected packages: pip
+  Found existing installation: pip 9.0.0
+    Uninstalling pip-9.0.0:
+      Successfully uninstalled pip-9.0.0
+Successfully installed pip-9.0.1
+saguinag@sailntrpy:~$ sudo -H pip install --upgrade virtualenv
+Requirement already up-to-date: virtualenv in /usr/local/lib/python3.5/site-packages
+saguinag@sailntrpy:~$ $ virtualenv --system-site-packages ~/tensorflow
+
+
+~$ which virtualenv
+	/usr/local/bin/virtualenv
+
+virtualenv --system-site-packages ~/tensorflow
+	Using base prefix '/usr/local/Cellar/python3/3.5.2_3/Frameworks/Python.framework/Versions/3.5'
+	New python executable in /Users/saguinag/tensorflow/bin/python3.5
+	Not overwriting existing python script /Users/saguinag/tensorflow/bin/python (you must use /Users/saguinag/tensorflow/bin/python3.5)
+	Installing setuptools, pip, wheel...done.
+
+source ~/tensorflow/bin/activate
+(tensorflow) saguinag@sailntrpy:~$
+</code></pre>
+
+<h3 id="connect-to-dsgx">Connect to DSGx</h3>
+
+<p>If it applies, first connect via VPN. Using the following
+command mount DSGx locally (on Mac OS X):
+<code>sshfs -o IdentityFile=~/.ssh/id_rsa</code>
+    <code>username@dsg2.crc.nd.edu:/home/username/ /local/Vol/working_dir/</code></p>
+
+<p>But this doesn&rsquo;t work with virtualenv, so login via ssh to dsgx (!! this might not be entirely true.)</p>
+
+<p>To umount do:
+    <code>umount -f DIR/</code></p>
+
+<ul>
+<li><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">To work with virtualenv <code>ssh dsgx</code></a></li>
+</ul>
+
+<p><code>virtualenv -p /usr/bin/python2.7 venv/</code>
+<code>source venv/bin/activate</code></p>
+
+<h4 id="with-dsg2-and-tensorflow-using-virtualenv">With DSG2 and Tensorflow using virtualenv</h4>
+
+<p>Got it to work on DSG2:</p>
+
+<pre><code> 513  virtualenv --system-site-packages ~/tensorflow
+  514  source ~/tensorflow/bin/activate
+  515  export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc2-cp27-none-linux_x86_64.whl
+  516  pip install --upgrade $TF_BINARY_URL
+  517  python
+</code></pre>
+
+<h2 id="tensorflow">TensorFlow</h2>
+
+<p>Links to <a href="https://www.tensorflow.org/versions/r0.11/tutorials/index.html">tensorflow tutorials</a></p>
+
+<p>ToDo: Need to install it locally for now</p>
+
+<p>The working directory is <code>/Volumes/theory/entropy/DeepLerning</code>. Go into this directory
+and launch Jupyter using the following command, <code>jupyter notebook&amp;</code></p>
+
+<h3 id="basic-test">Basic Test</h3>
+
+<ul>
+<li><a href="https://github.com/tensorflow/tensorflow">TensorFlow Site</a> Done</li>
+<li><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation">Run a TensorFlow demo model</a>
+<br /></li>
+</ul>
+
+<h3 id="feed-forward-neural-network">feed-forward neural network</h3>
+
+	</p>
+
+	
+
+		</div>
+
+		<!-- Footer -->
+<footer id="footer">
+	<ul class="icons">
+		
+		
+		
+		<li><a href="//twitter.com/abitofalchemy" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		
+		
+		<li><a href="//github.com/abitofalchemy" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+		
+		
+		<li><a href="https://www.linkedin.com/in/salvador-aguinaga-767a62" target="_blank" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
+		
+		
+		
+		
+		<li><a href="#contact-form" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+		
+	</ul>
+
+	<ul class="copyright">
+		
+		<li>&copy; S. Aguinaga | Design: <a href="//html5up.net">HTML5 UP</a></li>
+		
+	</ul>
+</footer>
+
+<!-- Scripts -->
+<script src="http://s-aguinaga.github.io/js/jquery.min.js"></script>
+<script src="http://s-aguinaga.github.io/js/jquery.poptrox.min.js"></script>
+<script src="http://s-aguinaga.github.io/js/skel.min.js"></script>
+<script src="http://s-aguinaga.github.io/js/util.js"></script>
+
+<script src="http://s-aguinaga.github.io/js/main.js"></script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-35842456-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+
+	</body>
+</html>
