@@ -17,6 +17,10 @@
       <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
       <description>
 
+&lt;p&gt;A brief walk into how I tought myself the foundations that underlies neural networks.&lt;/p&gt;
+
+&lt;h1 id=&#34;learning-and-working-with-deep-neural-networks&#34;&gt;Learning and Working with Deep Neural Networks&lt;/h1&gt;
+
 &lt;h2 id=&#34;setting-up-dev-machine&#34;&gt;Setting Up Dev Machine&lt;/h2&gt;
 
 &lt;h3 id=&#34;working-locally&#34;&gt;Working Locally&lt;/h3&gt;
@@ -145,11 +149,13 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
       <pubDate>Mon, 26 Sep 2016 13:00:35 -0400</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/hlf/</guid>
-      <description>&lt;p&gt;I had an extraordinary opportunity to participate as a young researcher in
+      <description>
+
+&lt;p&gt;I had an extraordinary opportunity to participate as a young researcher in
 this year&amp;rsquo;s 4th Heidelberg Laureate Forum (Heidelberg, Germany). I came away
 having talked one-on-one with several Turin Award Winners and one Nobel Laureate&lt;/p&gt;
 
-&lt;p&gt;Discovering Hidden Structure&lt;/p&gt;
+&lt;h2 id=&#34;discovering-hidden-structure&#34;&gt;Discovering Hidden Structure&lt;/h2&gt;
 </description>
     </item>
     
