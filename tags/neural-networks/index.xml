@@ -17,9 +17,35 @@
       <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
       <description>
 
-&lt;p&gt;A brief walk into how I tought myself the foundations that underlies neural networks.&lt;/p&gt;
+&lt;p&gt;Deep learning: A brief walk into how I tought myself the foundations that underlies neural networks.&lt;/p&gt;
 
 &lt;h1 id=&#34;learning-and-working-with-deep-neural-networks&#34;&gt;Learning and Working with Deep Neural Networks&lt;/h1&gt;
+
+&lt;p&gt;Represenation learning is a set of methods that allows an
+algorithm automatically find the represenations needed for detection or classification.&lt;/p&gt;
+
+&lt;p&gt;Diverse domains of science, business, and government.&lt;/p&gt;
+
+&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
+
+&lt;p&gt;Types of learning
+- Represenation learning
+- Deep learning
+- Supervised, unsupervised, and semi-supervised learning&lt;/p&gt;
+
+&lt;h2 id=&#34;supervised-learning&#34;&gt;Supervised learning&lt;/h2&gt;
+
+&lt;h3 id=&#34;objective-function&#34;&gt;Objective function&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sum of differentiable functions (finding its minimums or maximums by iteration.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A differentiable function, from &lt;a href=&#34;https://en.wikipedia.org/wiki/Differentiable_function&#34;&gt;Wikipedia&lt;/a&gt;, In calculus (a branch of mathematics), a differentiable function of one real variable is a function whose derivative exists at each point in its domain.&lt;/p&gt;
+
+&lt;h3 id=&#34;gradient-descent&#34;&gt;Gradient Descent&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Stochastic gradient descent&lt;/p&gt;
 
 &lt;h2 id=&#34;setting-up-dev-machine&#34;&gt;Setting Up Dev Machine&lt;/h2&gt;
 

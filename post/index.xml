@@ -6,8 +6,51 @@
     <description>Recent content in Posts on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Nov 2016 06:53:43 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 04 Dec 2016 04:52:33 -0500</lastBuildDate>
     <atom:link href="http://s-aguinaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>learningfromothers</title>
+      <link>http://s-aguinaga.github.io/post/learningfromothers/</link>
+      <pubDate>Sun, 04 Dec 2016 04:52:33 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/post/learningfromothers/</guid>
+      <description>
+
+&lt;h1 id=&#34;links-to-amazing-websites&#34;&gt;Links to Amazing Websites&lt;/h1&gt;
+
+&lt;p&gt;A collection of technical content pages that I admire and learn a ton from.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;ven://aric.hagberg.org&#34;&gt;Aric Hagberg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jeremykun.com/about/&#34;&gt;Jeremy Kun&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>graph mining generators</title>
+      <link>http://s-aguinaga.github.io/post/graph-mining-generators/</link>
+      <pubDate>Sun, 13 Nov 2016 12:00:04 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/post/graph-mining-generators/</guid>
+      <description>
+
+&lt;h2 id=&#34;graph-mining&#34;&gt;Graph Mining&lt;/h2&gt;
+
+&lt;p&gt;www.oslom.org by fortunato&lt;/p&gt;
+
+&lt;h3 id=&#34;marginalization-in-general-graphs&#34;&gt;Marginalization in general graphs&lt;/h3&gt;
+
+&lt;p&gt;The marginal distribution of a subset of a collection of random variables is the prob. distribution of  the variables contained in the subset.&lt;/p&gt;
+
+&lt;h2 id=&#34;junction-trees&#34;&gt;Junction Trees&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cs.helsinki.fi/u/bmmalone/probabilistic-models-spring-2014/JunctionTreeBarber.pdf&#34;&gt;David Barber&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>learning and working with deep nn</title>
@@ -17,9 +60,35 @@
       <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
       <description>
 
-&lt;p&gt;A brief walk into how I tought myself the foundations that underlies neural networks.&lt;/p&gt;
+&lt;p&gt;Deep learning: A brief walk into how I tought myself the foundations that underlies neural networks.&lt;/p&gt;
 
 &lt;h1 id=&#34;learning-and-working-with-deep-neural-networks&#34;&gt;Learning and Working with Deep Neural Networks&lt;/h1&gt;
+
+&lt;p&gt;Represenation learning is a set of methods that allows an
+algorithm automatically find the represenations needed for detection or classification.&lt;/p&gt;
+
+&lt;p&gt;Diverse domains of science, business, and government.&lt;/p&gt;
+
+&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
+
+&lt;p&gt;Types of learning
+- Represenation learning
+- Deep learning
+- Supervised, unsupervised, and semi-supervised learning&lt;/p&gt;
+
+&lt;h2 id=&#34;supervised-learning&#34;&gt;Supervised learning&lt;/h2&gt;
+
+&lt;h3 id=&#34;objective-function&#34;&gt;Objective function&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sum of differentiable functions (finding its minimums or maximums by iteration.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A differentiable function, from &lt;a href=&#34;https://en.wikipedia.org/wiki/Differentiable_function&#34;&gt;Wikipedia&lt;/a&gt;, In calculus (a branch of mathematics), a differentiable function of one real variable is a function whose derivative exists at each point in its domain.&lt;/p&gt;
+
+&lt;h3 id=&#34;gradient-descent&#34;&gt;Gradient Descent&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Stochastic gradient descent&lt;/p&gt;
 
 &lt;h2 id=&#34;setting-up-dev-machine&#34;&gt;Setting Up Dev Machine&lt;/h2&gt;
 
@@ -135,15 +204,6 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
     </item>
     
     <item>
-      <title>recurrent neural networks</title>
-      <link>http://s-aguinaga.github.io/post/recurrent-neural-networks/</link>
-      <pubDate>Sun, 13 Nov 2016 06:39:37 -0500</pubDate>
-      
-      <guid>http://s-aguinaga.github.io/post/recurrent-neural-networks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>4th Heidelberg Laureate Forum</title>
       <link>http://s-aguinaga.github.io/post/hlf/</link>
       <pubDate>Mon, 26 Sep 2016 13:00:35 -0400</pubDate>
@@ -166,6 +226,33 @@ having talked one-on-one with several Turin Award Winners and one Nobel Laureate
       
       <guid>http://s-aguinaga.github.io/post/welcome/</guid>
       <description>&lt;p&gt;This is somehting&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://s-aguinaga.github.io/post/tmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/post/tmp/</guid>
+      <description>
+
+&lt;h4 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;This section describes how to get going after the Deep learning framework has been installed. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;** Tensorflow **
+conda create -n tensorflow python=2.7.12 anaconda&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;** Tensorflow on an Ubuntu Machine **
+&lt;code&gt;virtualenv -p /usr/bin/python2.7 tensorflow/&lt;/code&gt;
+&lt;code&gt;source tensorflow/bin/activate&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This ends up with this prompt:
+&lt;code&gt;(tensorflow)saguinag@atomix:~$&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     
