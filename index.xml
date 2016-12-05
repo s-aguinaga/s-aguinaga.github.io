@@ -10,7 +10,7 @@
     <atom:link href="http://s-aguinaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>learningfromothers</title>
+      <title>Learning from Others</title>
       <link>http://s-aguinaga.github.io/post/learningfromothers/</link>
       <pubDate>Sun, 04 Dec 2016 04:52:33 -0500</pubDate>
       
@@ -22,8 +22,9 @@
 &lt;p&gt;A collection of technical content pages that I admire and learn a ton from.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;ven://aric.hagberg.org&#34;&gt;Aric Hagberg&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://jeremykun.com/about/&#34;&gt;Jeremy Kun&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;ven://aric.hagberg.org&#34;&gt;Aric Hagberg&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://jeremykun.com/about/&#34;&gt;Jeremy Kun&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
