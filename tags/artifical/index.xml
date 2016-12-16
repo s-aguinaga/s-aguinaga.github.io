@@ -17,16 +17,18 @@
       <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
       <description>
 
-&lt;p&gt;Deep learning: A brief walk into how I tought myself the foundations that underlies neural networks.&lt;/p&gt;
+&lt;p&gt;Deep learning: A brief walk into the foundations that underlies neural networks and deep learning.&lt;/p&gt;
 
-&lt;h1 id=&#34;learning-and-working-with-deep-neural-networks&#34;&gt;Learning and Working with Deep Neural Networks&lt;/h1&gt;
+&lt;h1 id=&#34;neural-networks&#34;&gt;Neural Networks&lt;/h1&gt;
 
 &lt;p&gt;Represenation learning is a set of methods that allows an
 algorithm automatically find the represenations needed for detection or classification.&lt;/p&gt;
 
 &lt;p&gt;Diverse domains of science, business, and government.&lt;/p&gt;
 
-&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
+&lt;h2 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h2&gt;
+
+&lt;p&gt;In machine learning we start out with a concrete problem or challenge. This problem is usually coupled to a dataset. You have arrived to a new level of computing when you are tackling problems at scale and in the core realm of BigData. In other words, now you have to be in tune with your computing resources (e.g, one needs to understand what CPUs and what GPUs are on target computing system).&lt;/p&gt;
 
 &lt;p&gt;Types of learning
 - Represenation learning
@@ -155,6 +157,10 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
 &lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation&#34;&gt;Run a TensorFlow demo model&lt;/a&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&#34;theano&#34;&gt;Theano&lt;/h2&gt;
+
+&lt;p&gt;On your favorite Search Engine type &lt;code&gt;download install theano&lt;/code&gt; and you will inevitable end up this site: &lt;code&gt;http://deeplearning.net/software/theano/install.html&lt;/code&gt; and now depending on your platform got to the specific instructions and &lt;code&gt;pip install&lt;/code&gt; it&lt;/p&gt;
 
 &lt;h3 id=&#34;feed-forward-neural-network&#34;&gt;feed-forward neural network&lt;/h3&gt;
 </description>
