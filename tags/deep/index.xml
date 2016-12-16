@@ -134,7 +134,7 @@ command mount DSGx locally (on Mac OS X):
 
 &lt;p&gt;Got it to work on DSG2:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt; 513  virtualenv --system-site-packages ~/tensorflow
+&lt;pre&gt;&lt;code&gt;  513  virtualenv --system-site-packages ~/tensorflow
   514  source ~/tensorflow/bin/activate
   515  export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc2-cp27-none-linux_x86_64.whl
   516  pip install --upgrade $TF_BINARY_URL
@@ -160,9 +160,7 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
 
 &lt;h2 id=&#34;theano&#34;&gt;Theano&lt;/h2&gt;
 
-&lt;p&gt;On your favorite Search Engine type &lt;code&gt;download install theano&lt;/code&gt; and you will inevitable end up this site: &lt;code&gt;http://deeplearning.net/software/theano/install.html&lt;/code&gt; and now depending on your platform got to the specific instructions and &lt;code&gt;pip install&lt;/code&gt; it&lt;/p&gt;
-
-&lt;h3 id=&#34;feed-forward-neural-network&#34;&gt;feed-forward neural network&lt;/h3&gt;
+&lt;p&gt;On your favorite Search Engine type &lt;code&gt;download install theano&lt;/code&gt; and you will end up this site: the &lt;a href=&#34;http://deeplearning.net/software/theano/install.html&#34;&gt;Installing Theano Docs&lt;/a&gt; and now depending on your platform got to the specific instructions and &lt;code&gt;pip install&lt;/code&gt; it&lt;/p&gt;
 </description>
     </item>
     
