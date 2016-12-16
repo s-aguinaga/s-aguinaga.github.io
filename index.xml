@@ -6,64 +6,8 @@
     <description>Recent content on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Dec 2016 12:01:45 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 04 Dec 2016 04:52:33 -0500</lastBuildDate>
     <atom:link href="http://s-aguinaga.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>openACC</title>
-      <link>http://s-aguinaga.github.io/post/openacc/</link>
-      <pubDate>Tue, 06 Dec 2016 12:01:45 -0500</pubDate>
-      
-      <guid>http://s-aguinaga.github.io/post/openacc/</guid>
-      <description>
-
-&lt;h2 id=&#34;parallelize-your-code&#34;&gt;Parallelize Your Code&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Benefits:
-
-&lt;ul&gt;
-&lt;li&gt;No involment of OpenCL, CUDA, etc.&lt;/li&gt;
-&lt;li&gt;Source can work on both CPUs (serially) and can be deployed to GPUs&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;directives&#34;&gt;Directives&lt;/h2&gt;
-
-&lt;p&gt;The directive way approach has shown that one stands to gain by improving the
-performance of code execution.&lt;/p&gt;
-
-&lt;p&gt;Give hints to the compiler so it knows what to do.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;#pragma omp parallel for redcution(+:pi)&lt;/code&gt;
-and its equialnet in OpenACC: &lt;code&gt;#pragma acc kernels&lt;/code&gt;
-This is something that is usually added right before code that can be highly
-parallelizable. Takes serial code and makes run on GPUs.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-#pragma acc kernels
-&lt;/code&gt;
-Put a directive in front of the loops, then the compiler will generate the right
-gpu code.&lt;/p&gt;
-
-&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;pragma&lt;/code&gt; is a directive of instruction to the compilers.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;#pragma acc kernels [clause ...]&lt;/code&gt;
-is followed by structure blocks such as for loop in C.&lt;/p&gt;
-
-&lt;h1 id=&#34;c-pointers&#34;&gt;C Pointers&lt;/h1&gt;
-
-&lt;p&gt;Using keywords like &lt;code&gt;restrict&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;float *restrict y&lt;/code&gt; when nothing is going to point to &lt;code&gt;y&lt;/code&gt;, then
-use restrict.&lt;/p&gt;
-
-&lt;p&gt;To activate the directives:
-&lt;code&gt;pgcc -acc -Minfo=accel saxpy.c&lt;/code&gt;&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Learning from Others</title>
@@ -73,6 +17,8 @@ use restrict.&lt;/p&gt;
       <guid>http://s-aguinaga.github.io/post/learningfromothers/</guid>
       <description>
 
+&lt;p&gt;Sites I follow.&lt;/p&gt;
+
 &lt;h1 id=&#34;links-to-amazing-websites&#34;&gt;Links to Amazing Websites&lt;/h1&gt;
 
 &lt;p&gt;A collection of technical content pages that I admire and learn a ton from.&lt;/p&gt;
@@ -81,30 +27,6 @@ use restrict.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;ven://aric.hagberg.org&#34;&gt;Aric Hagberg&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://jeremykun.com/about/&#34;&gt;Jeremy Kun&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>graph mining generators</title>
-      <link>http://s-aguinaga.github.io/post/graph-mining-generators/</link>
-      <pubDate>Sun, 13 Nov 2016 12:00:04 -0500</pubDate>
-      
-      <guid>http://s-aguinaga.github.io/post/graph-mining-generators/</guid>
-      <description>
-
-&lt;h2 id=&#34;graph-mining&#34;&gt;Graph Mining&lt;/h2&gt;
-
-&lt;p&gt;www.oslom.org by fortunato&lt;/p&gt;
-
-&lt;h3 id=&#34;marginalization-in-general-graphs&#34;&gt;Marginalization in general graphs&lt;/h3&gt;
-
-&lt;p&gt;The marginal distribution of a subset of a collection of random variables is the prob. distribution of  the variables contained in the subset.&lt;/p&gt;
-
-&lt;h2 id=&#34;junction-trees&#34;&gt;Junction Trees&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cs.helsinki.fi/u/bmmalone/probabilistic-models-spring-2014/JunctionTreeBarber.pdf&#34;&gt;David Barber&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -286,33 +208,6 @@ having talked one-on-one with several Turin Award Winners and one Nobel Laureate
 I am involved in, the things I make, and a little about who I am. The site is an
 evolving project. I built it with Hugo because I can write content using
 markdown.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://s-aguinaga.github.io/post/tmp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://s-aguinaga.github.io/post/tmp/</guid>
-      <description>
-
-&lt;h4 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;This section describes how to get going after the Deep learning framework has been installed. 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;** Tensorflow **
-conda create -n tensorflow python=2.7.12 anaconda&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;** Tensorflow on an Ubuntu Machine **
-&lt;code&gt;virtualenv -p /usr/bin/python2.7 tensorflow/&lt;/code&gt;
-&lt;code&gt;source tensorflow/bin/activate&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This ends up with this prompt:
-&lt;code&gt;(tensorflow)saguinag@atomix:~$&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     
