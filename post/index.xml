@@ -6,8 +6,64 @@
     <description>Recent content in Posts on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Dec 2016 04:52:33 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 06 Dec 2016 12:01:45 -0500</lastBuildDate>
     <atom:link href="http://s-aguinaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>openACC</title>
+      <link>http://s-aguinaga.github.io/post/openacc/</link>
+      <pubDate>Tue, 06 Dec 2016 12:01:45 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/post/openacc/</guid>
+      <description>
+
+&lt;h2 id=&#34;parallelize-your-code&#34;&gt;Parallelize Your Code&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Benefits:
+
+&lt;ul&gt;
+&lt;li&gt;No involment of OpenCL, CUDA, etc.&lt;/li&gt;
+&lt;li&gt;Source can work on both CPUs (serially) and can be deployed to GPUs&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;directives&#34;&gt;Directives&lt;/h2&gt;
+
+&lt;p&gt;The directive way approach has shown that one stands to gain by improving the
+performance of code execution.&lt;/p&gt;
+
+&lt;p&gt;Give hints to the compiler so it knows what to do.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;#pragma omp parallel for redcution(+:pi)&lt;/code&gt;
+and its equialnet in OpenACC: &lt;code&gt;#pragma acc kernels&lt;/code&gt;
+This is something that is usually added right before code that can be highly
+parallelizable. Takes serial code and makes run on GPUs.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+#pragma acc kernels
+&lt;/code&gt;
+Put a directive in front of the loops, then the compiler will generate the right
+gpu code.&lt;/p&gt;
+
+&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;pragma&lt;/code&gt; is a directive of instruction to the compilers.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;#pragma acc kernels [clause ...]&lt;/code&gt;
+is followed by structure blocks such as for loop in C.&lt;/p&gt;
+
+&lt;h1 id=&#34;c-pointers&#34;&gt;C Pointers&lt;/h1&gt;
+
+&lt;p&gt;Using keywords like &lt;code&gt;restrict&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;float *restrict y&lt;/code&gt; when nothing is going to point to &lt;code&gt;y&lt;/code&gt;, then
+use restrict.&lt;/p&gt;
+
+&lt;p&gt;To activate the directives:
+&lt;code&gt;pgcc -acc -Minfo=accel saxpy.c&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Learning from Others</title>
@@ -226,7 +282,10 @@ having talked one-on-one with several Turin Award Winners and one Nobel Laureate
       <pubDate>Sun, 28 Aug 2016 07:07:23 -0400</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/welcome/</guid>
-      <description>&lt;p&gt;This is somehting&lt;/p&gt;
+      <description>&lt;p&gt;The purpose of this Web-site is to tell you about my research interests, the projects
+I am involved in, the things I make, and a little about who I am. The site is an
+evolving project. I built it with Hugo because I can write content using
+markdown.&lt;/p&gt;
 </description>
     </item>
     
