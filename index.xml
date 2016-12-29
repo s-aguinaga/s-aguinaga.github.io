@@ -39,7 +39,7 @@
       <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
       <description>
 
-&lt;p&gt;Deep learning: A brief walk into the foundations that underlies neural networks and deep learning.&lt;/p&gt;
+&lt;p&gt;Deep learning: A brief walk into the foundations underliing neural networks and deep learning.&lt;/p&gt;
 
 &lt;h1 id=&#34;neural-networks&#34;&gt;Neural Networks&lt;/h1&gt;
 
@@ -57,7 +57,34 @@ algorithm automatically find the represenations needed for detection or classifi
 - Deep learning
 - Supervised, unsupervised, and semi-supervised learning&lt;/p&gt;
 
+&lt;p&gt;Before we look at the various methods avilable in machine learning for solving problems,
+let&amp;rsquo;s start by considering data and the questions around that data motivating our interest.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-data&#34;&gt;The Data&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Training data&lt;/li&gt;
+&lt;li&gt;Unseen data (or test data)&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;supervised-learning&#34;&gt;Supervised learning&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Support Vector Machine
+This algorithm can handle and infinte number of features (or attributes)
+SVM is a classification algorithm - the type of question you can ask is
+if something belongs  to a particular class. The objective of this algorithm is to fidn the optimal separtating hyperplane. Think in terms of what is the largest margin we can find on each side of the the line for the given training data.&lt;/p&gt;
+
+&lt;p&gt;Is the data linearnly separable, if not, then is do we need nonlinear sepation?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Links
+&lt;a href=&#34;http://www.cs.columbia.edu/~kathy/cs4701/documents/jason_svm_tutorial.pdf&#34;&gt;Kathy at Columbia&lt;/a&gt;
+&lt;a href=&#34;https://www.analyticsvidhya.com/blog/2015/10/understaing-support-vector-machine-example-code/&#34;&gt;analyticsvidhya&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Unsupervised learning&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;minibatch-stochastic-gradient-descent-algorithm&#34;&gt;Minibatch stochastic gradient descent algorithm&lt;/h3&gt;
 
 &lt;h3 id=&#34;objective-function&#34;&gt;Objective function&lt;/h3&gt;
 
@@ -182,7 +209,13 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
 
 &lt;h2 id=&#34;theano&#34;&gt;Theano&lt;/h2&gt;
 
-&lt;p&gt;On your favorite Search Engine type &lt;code&gt;download install theano&lt;/code&gt; and you will end up this site: the &lt;a href=&#34;http://deeplearning.net/software/theano/install.html&#34;&gt;Installing Theano Docs&lt;/a&gt; and now depending on your platform got to the specific instructions and &lt;code&gt;pip install&lt;/code&gt; it&lt;/p&gt;
+&lt;p&gt;On your favorite Search Engine type &lt;code&gt;download install theano&lt;/code&gt; and you will end up this site: the docs for Theano 0.8 can be found &lt;a href=&#34;http://deeplearning.net/software/theano/install.html&#34;&gt;Installing Theano Docs&lt;/a&gt; and now depending on your platform got to the specific instructions and &lt;code&gt;pip install&lt;/code&gt; it.&lt;/p&gt;
+
+&lt;p&gt;Following are my development notes.&lt;/p&gt;
+
+&lt;h3 id=&#34;to-test-that-the-system-has-gpu-capability&#34;&gt;To test that the system has GPU capability&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/32045279/how-can-i-enable-my-macbook-pro-gpu-optimization-for-theano&#34;&gt;Apparently not compatible with NVIDIA&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -208,9 +241,19 @@ having talked one-on-one with several Turin Award Winners and one Nobel Laureate
       <pubDate>Sun, 28 Aug 2016 07:07:23 -0400</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/welcome/</guid>
-      <description>&lt;p&gt;The purpose of this Web-site is to tell you about my research interests, the projects
-I am involved in, the things I make, and a little about who I am. The site is an
-evolving project. I built it with Hugo because I can write content using
+      <description>
+
+&lt;p&gt;The purpose of this Web-site is to tell you about my research interests, the projects
+I am involved in, the things I make, and a little about who I am.&lt;/p&gt;
+
+&lt;h2 id=&#34;extended-bio&#34;&gt;Extended Bio&lt;/h2&gt;
+
+&lt;p&gt;Professional experience includes stints in auditory research and electrophysiology at Northwestern University,
+a hardware design at Motorola (mobile devices) and 3Com (now, HPE Networking).&lt;/p&gt;
+
+&lt;h2 id=&#34;credits&#34;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;The site is an evolving project. I built it with Hugo because I can write content using
 markdown.&lt;/p&gt;
 </description>
     </item>
