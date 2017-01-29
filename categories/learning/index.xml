@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning on Sal Aguinaga</title>
-    <link>http://s-aguinaga.github.io/categories/learning/</link>
+    <link>http://s-aguinaga.github.io/categories/learning/index.xml</link>
     <description>Recent content in Learning on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Dec 2016 04:52:33 -0500</lastBuildDate>
     <atom:link href="http://s-aguinaga.github.io/categories/learning/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +14,8 @@
       <pubDate>Sun, 04 Dec 2016 04:52:33 -0500</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/learningfromothers/</guid>
-      <description>
-
-&lt;p&gt;Sites I follow.&lt;/p&gt;
+      <description>&lt;p&gt;Sites I follow.
+&lt;/p&gt;
 
 &lt;h1 id=&#34;links-to-amazing-websites&#34;&gt;Links to Amazing Websites&lt;/h1&gt;
 
@@ -27,8 +25,9 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;ven://aric.hagberg.org&#34;&gt;Aric Hagberg&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://jeremykun.com/about/&#34;&gt;Jeremy Kun&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://acmsel.safaribooksonline.com/9781491901427&#34;&gt;Data Science from Scratch&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

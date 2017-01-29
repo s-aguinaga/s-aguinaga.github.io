@@ -14,7 +14,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     	<meta name="description" content="I&#39;m drowning in the world&#39;s data!">
     	<meta http-equiv="content-language" content="en-us" />
 
-		<meta name="generator" content="Hugo 0.16" />
+		<meta name="generator" content="Hugo 0.18.1" />
 
 		<!--[if lte IE 8]><script src='{{ .Site.BaseURL }}js/ie/html5shiv.js'></script><![endif]-->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
@@ -81,16 +81,39 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	</span>
 
 	<p>
-	    
+	    <p>Deep learning: A brief walk into the foundations underliing neural networks and deep learning.</p>
 
-<p>Deep learning: A brief walk into the foundations underliing neural networks and deep learning.</p>
+<p>
+<!--.----1----.----2----.----3----.----4----.----5----.----6----.----7----.----8 --></p>
 
 <h1 id="neural-networks">Neural Networks</h1>
 
-<p>Represenation learning is a set of methods that allows an
-algorithm automatically find the represenations needed for detection or classification.</p>
+<p>Represenation learning is a set of methods that allows an algorithm automatically
+find the represenations needed for detection or classification.</p>
 
-<p>Diverse domains of science, business, and government.</p>
+<h2 id="historical-notes">Historical Notes</h2>
+
+<ul>
+<li><p>Convolutional Networks
+These network architectures came from a power model architecture introduced by the neocognitron (Fukushima, 1980) for processing images and insprired by the strcuture of the mammalian visual system see LeCun et al. (1998).</p></li>
+
+<li><p>Rectified linear unit</p></li>
+
+<li><p>Models of symbolic reasoning</p></li>
+
+<li><p>Connectionism and concepts of distributed representation</p></li>
+
+<li><p>Back-propagtion is an algorithm that dominates the way we train deep models</p></li>
+
+<li><p>Sequence modeling tasks
+An example is natural language processing tasks (used in Google technology)</p></li>
+
+<li><p>Kernerl Machines</p></li>
+
+<li><p>Graphical models</p></li>
+
+<li><p>Deep belief neural network (Hinton 2006)</p></li>
+</ul>
 
 <h2 id="machine-learning">Machine Learning</h2>
 
@@ -142,7 +165,16 @@ if something belongs  to a particular class. The objective of this algorithm is 
 
 <p>Stochastic gradient descent</p>
 
-<h2 id="setting-up-dev-machine">Setting Up Dev Machine</h2>
+<h2 id="system-setup">System Setup</h2>
+
+<p>Setting up a dev machine.
+- Note that on a MacBook Pro (Retina, 13-inch, Early 2015) Theano cannot use the GPU devices.
+- On a mid 2010 mac mini with NVIDIA graphics</p>
+
+<h3 id="mac-mini-with-nvidia-graphics">Mac Mini with NVIDIA graphics</h3>
+
+<p>Getting the code<a href="https://developer.nvidia.com/cuda-downloads">cuda downloads</a>
+- Specifically getting this image: <a href="https://developer.nvidia.com/compute/cuda/8.0/Prod/local_installers/cuda_8.0.55_mac-dmg">CUDA Toolkit dmg</a></p>
 
 <h3 id="working-locally">Working Locally</h3>
 
@@ -208,7 +240,7 @@ source ~/tensorflow/bin/activate
 
 <p>If it applies, first connect via VPN. Using the following
 command mount DSGx locally (on Mac OS X):
-<code>sshfs -o IdentityFile=~/.ssh/id_rsa</code>
+  <code>sshfs -o IdentityFile=~/.ssh/id_rsa</code>
     <code>username@dsg2.crc.nd.edu:/home/username/ /local/Vol/working_dir/</code></p>
 
 <p>But this doesn&rsquo;t work with virtualenv, so login via ssh to dsgx (!! this might not be entirely true.)</p>
@@ -259,8 +291,13 @@ and launch Jupyter using the following command, <code>jupyter notebook&amp;</cod
 
 <h3 id="to-test-that-the-system-has-gpu-capability">To test that the system has GPU capability</h3>
 
-<p><a href="http://stackoverflow.com/questions/32045279/how-can-i-enable-my-macbook-pro-gpu-optimization-for-theano">Apparently not compatible with NVIDIA</a></p>
+<p>My MacBookPro&rsquo;s hardware Intel Iris Graphics 6100 is <a href="http://stackoverflow.com/questions/32045279/how-can-i-enable-my-macbook-pro-gpu-optimization-for-theano">apparently not compatible with Theano in GPU mode</a>. Thus, we are going to switch to a hardware system with NVIDIA graphics.</p>
 
+<p><a href="http://deeplearning.net/software/theano_versions/dev/install_macos.html">Installation macOS</a></p>
+
+<h3 id="examples">Examples</h3>
+
+<p><a href="../../pages/BabyTheano.html">Baby Steps</a></p>
 	</p>
 
 	

@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep on Sal Aguinaga</title>
-    <link>http://s-aguinaga.github.io/tags/deep/</link>
+    <link>http://s-aguinaga.github.io/tags/deep/index.xml</link>
     <description>Recent content in Deep on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Nov 2016 06:53:43 -0500</lastBuildDate>
     <atom:link href="http://s-aguinaga.github.io/tags/deep/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,16 +14,39 @@
       <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
-      <description>
+      <description>&lt;p&gt;Deep learning: A brief walk into the foundations underliing neural networks and deep learning.&lt;/p&gt;
 
-&lt;p&gt;Deep learning: A brief walk into the foundations underliing neural networks and deep learning.&lt;/p&gt;
+&lt;p&gt;
+&lt;!--.----1----.----2----.----3----.----4----.----5----.----6----.----7----.----8 --&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;neural-networks&#34;&gt;Neural Networks&lt;/h1&gt;
 
-&lt;p&gt;Represenation learning is a set of methods that allows an
-algorithm automatically find the represenations needed for detection or classification.&lt;/p&gt;
+&lt;p&gt;Represenation learning is a set of methods that allows an algorithm automatically
+find the represenations needed for detection or classification.&lt;/p&gt;
 
-&lt;p&gt;Diverse domains of science, business, and government.&lt;/p&gt;
+&lt;h2 id=&#34;historical-notes&#34;&gt;Historical Notes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Convolutional Networks
+These network architectures came from a power model architecture introduced by the neocognitron (Fukushima, 1980) for processing images and insprired by the strcuture of the mammalian visual system see LeCun et al. (1998).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Rectified linear unit&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Models of symbolic reasoning&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Connectionism and concepts of distributed representation&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Back-propagtion is an algorithm that dominates the way we train deep models&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sequence modeling tasks
+An example is natural language processing tasks (used in Google technology)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Kernerl Machines&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Graphical models&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Deep belief neural network (Hinton 2006)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h2&gt;
 
@@ -76,7 +98,16 @@ if something belongs  to a particular class. The objective of this algorithm is 
 
 &lt;p&gt;Stochastic gradient descent&lt;/p&gt;
 
-&lt;h2 id=&#34;setting-up-dev-machine&#34;&gt;Setting Up Dev Machine&lt;/h2&gt;
+&lt;h2 id=&#34;system-setup&#34;&gt;System Setup&lt;/h2&gt;
+
+&lt;p&gt;Setting up a dev machine.
+- Note that on a MacBook Pro (Retina, 13-inch, Early 2015) Theano cannot use the GPU devices.
+- On a mid 2010 mac mini with NVIDIA graphics&lt;/p&gt;
+
+&lt;h3 id=&#34;mac-mini-with-nvidia-graphics&#34;&gt;Mac Mini with NVIDIA graphics&lt;/h3&gt;
+
+&lt;p&gt;Getting the code&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34;&gt;cuda downloads&lt;/a&gt;
+- Specifically getting this image: &lt;a href=&#34;https://developer.nvidia.com/compute/cuda/8.0/Prod/local_installers/cuda_8.0.55_mac-dmg&#34;&gt;CUDA Toolkit dmg&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;working-locally&#34;&gt;Working Locally&lt;/h3&gt;
 
@@ -142,7 +173,7 @@ source ~/tensorflow/bin/activate
 
 &lt;p&gt;If it applies, first connect via VPN. Using the following
 command mount DSGx locally (on Mac OS X):
-&lt;code&gt;sshfs -o IdentityFile=~/.ssh/id_rsa&lt;/code&gt;
+  &lt;code&gt;sshfs -o IdentityFile=~/.ssh/id_rsa&lt;/code&gt;
     &lt;code&gt;username@dsg2.crc.nd.edu:/home/username/ /local/Vol/working_dir/&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;But this doesn&amp;rsquo;t work with virtualenv, so login via ssh to dsgx (!! this might not be entirely true.)&lt;/p&gt;
@@ -193,8 +224,13 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
 
 &lt;h3 id=&#34;to-test-that-the-system-has-gpu-capability&#34;&gt;To test that the system has GPU capability&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/32045279/how-can-i-enable-my-macbook-pro-gpu-optimization-for-theano&#34;&gt;Apparently not compatible with NVIDIA&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;My MacBookPro&amp;rsquo;s hardware Intel Iris Graphics 6100 is &lt;a href=&#34;http://stackoverflow.com/questions/32045279/how-can-i-enable-my-macbook-pro-gpu-optimization-for-theano&#34;&gt;apparently not compatible with Theano in GPU mode&lt;/a&gt;. Thus, we are going to switch to a hardware system with NVIDIA graphics.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://deeplearning.net/software/theano_versions/dev/install_macos.html&#34;&gt;Installation macOS&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;../../pages/BabyTheano.html&#34;&gt;Baby Steps&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
