@@ -173,8 +173,7 @@ source ~/tensorflow/bin/activate
 
 &lt;p&gt;If it applies, first connect via VPN. Using the following
 command mount DSGx locally (on Mac OS X):
-  &lt;code&gt;sshfs -o IdentityFile=~/.ssh/id_rsa&lt;/code&gt;
-    &lt;code&gt;username@dsg2.crc.nd.edu:/home/username/ /local/Vol/working_dir/&lt;/code&gt;&lt;/p&gt;
+  &lt;code&gt;sshfs -o IdentityFile=~/.ssh/id_rsa username@dsg2.crc.nd.edu:/home/username/ /local/Vol/working_dir/&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;But this doesn&amp;rsquo;t work with virtualenv, so login via ssh to dsgx (!! this might not be entirely true.)&lt;/p&gt;
 
