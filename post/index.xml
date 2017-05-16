@@ -6,80 +6,62 @@
     <description>Recent content in Posts on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2017 11:22:40 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 06 Dec 2016 12:01:45 -0500</lastBuildDate>
     <atom:link href="http://s-aguinaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Modularity</title>
-      <link>http://s-aguinaga.github.io/post/modularity/</link>
-      <pubDate>Mon, 02 Jan 2017 11:22:40 -0500</pubDate>
+      <title>openACC</title>
+      <link>http://s-aguinaga.github.io/post/openacc/</link>
+      <pubDate>Tue, 06 Dec 2016 12:01:45 -0500</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/modularity/</guid>
-      <description>&lt;p&gt;In graph mining the concept of dividing the nodes of a network into groups or
-communities as part of a clustering exercise is also called modularity. How well
-graph generators preserve modularity?&lt;/p&gt;
-
-&lt;p&gt;
-&lt;!--.----1----.----2----.----3----.----4----.----5----.----6----.----7----.----8 --&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-
-&lt;h1 id=&#34;related-work&#34;&gt;Related Work&lt;/h1&gt;
-
-&lt;h1 id=&#34;methods&#34;&gt;Methods&lt;/h1&gt;
-
-&lt;h2 id=&#34;communities-in-networks&#34;&gt;Communities in Networks&lt;/h2&gt;
+      <guid>http://s-aguinaga.github.io/post/openacc/</guid>
+      <description>&lt;h2 id=&#34;parallelize-your-code&#34;&gt;Parallelize Your Code&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Modularity maximization and Maximum Likelihood&lt;/li&gt;
-&lt;li&gt;Statistical Infrerence&lt;/li&gt;
-&lt;li&gt;Degree-correlated block model&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;community-formation-detection&#34;&gt;Community formation detection&lt;/h2&gt;
-
-&lt;p&gt;Identifiying communities may offer insight on how the network
-is organized.&lt;/p&gt;
+&lt;li&gt;Benefits:
 
 &lt;ul&gt;
-&lt;li&gt;vertices&lt;/li&gt;
-&lt;li&gt;graph partitioning&lt;/li&gt;
+&lt;li&gt;No involvement of OpenCL, CUDA, etc.&lt;/li&gt;
+&lt;li&gt;Source can work on both CPUs (serially) and can be deployed to GPUs&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;overlapping-communitites&#34;&gt;Overlapping Communitites&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;It is not unusual for communities to overlap at their boundaries.&lt;/p&gt;
+&lt;h2 id=&#34;directives&#34;&gt;Directives&lt;/h2&gt;
 
-&lt;p&gt;Finding cliques is an NP-complete problem (Bomze et al., 1999); a popular technique is the Bron–Kerbosch method (Bron and Kerbosch, 1973).&lt;/p&gt;
+&lt;p&gt;The directive way approach has shown that one stands to gain by improving the
+performance of code execution.&lt;/p&gt;
 
-&lt;h2 id=&#34;planted-partition-model-and-modularity-maximization&#34;&gt;Planted Partition Model and Modularity Maximization&lt;/h2&gt;
+&lt;p&gt;Give hints to the compiler so it knows what to do.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Value of the resolution Parameter&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;#pragma omp parallel for reduction(+:pi)&lt;/code&gt;
+and its equivalent in OpenACC: &lt;code&gt;#pragma acc kernels&lt;/code&gt;
+This is something that is usually added right before code that can be highly
+parallelizable. Takes serial code and makes run on GPUs.&lt;/p&gt;
 
-&lt;p&gt;Q = 1/m (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; Sum_ij (A_ij - Pij)\delta gigj&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+#pragma acc kernels
+&lt;/code&gt;
+Put a directive in front of the loops, then the compiler will generate the right
+gpu code.&lt;/p&gt;
 
-&lt;h1 id=&#34;links-and-references&#34;&gt;Links and References&lt;/h1&gt;
+&lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://kateto.net/networks-r-igraph&#34;&gt;Working with Networks by kateto&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pragma&lt;/code&gt; is a directive of instruction to the compilers.&lt;/p&gt;
 
-&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;#pragma acc kernels [clause ...]&lt;/code&gt;
+is followed by structure blocks such as for loop in C.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/24255143/graph-theory-in-networkx&#34;&gt;http://stackoverflow.com/questions/24255143/graph-theory-in-networkx&lt;/a&gt;
-&lt;a href=&#34;http://stackoverflow.com/questions/29897243/graph-modularity-in-python-networkx&#34;&gt;http://stackoverflow.com/questions/29897243/graph-modularity-in-python-networkx&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;c-pointers&#34;&gt;C Pointers&lt;/h1&gt;
 
-&lt;h1 id=&#34;c-and-r&#34;&gt;C and R&lt;/h1&gt;
+&lt;p&gt;Using keywords like &lt;code&gt;restrict&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.sixhat.net/finding-communities-in-networks-with-r-and-igraph.html&#34;&gt;http://www.sixhat.net/finding-communities-in-networks-with-r-and-igraph.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;float *restrict y&lt;/code&gt; when nothing is going to point to &lt;code&gt;y&lt;/code&gt;, then
+use restrict.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://igraph.org/r/doc/modularity.igraph.html&#34;&gt;http://igraph.org/r/doc/modularity.igraph.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/usc-cloud/parallel-louvain-modularity/blob/master/QuickStart.md&#34;&gt;Parallel Louvian Modularity&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;</description>
+&lt;p&gt;To activate the directives:
+&lt;code&gt;pgcc -acc -Minfo=accel saxpy.c&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -88,12 +70,11 @@ is organized.&lt;/p&gt;
       <pubDate>Sun, 04 Dec 2016 04:52:33 -0500</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/learningfromothers/</guid>
-      <description>&lt;p&gt;Sites I follow.
-&lt;/p&gt;
+      <description>&lt;p&gt;Sites I follow. A collection of technical content pages that I admire and learn a ton from.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;links-to-amazing-websites&#34;&gt;Links to Amazing Websites&lt;/h1&gt;
-
-&lt;p&gt;A collection of technical content pages that I admire and learn a ton from.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;ven://aric.hagberg.org&#34;&gt;Aric Hagberg&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -148,26 +129,26 @@ plot(g, layout=MCoords, vertex.size=8, vertex.label=NA, vertex.color=&amp;quot;l
     </item>
     
     <item>
-      <title>learning and working with deep nn</title>
+      <title>ML Notes on Learning and working with DNN</title>
       <link>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</link>
       <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
-      <description>&lt;p&gt;Deep learning: A brief walk into the foundations underliing neural networks and deep learning.&lt;/p&gt;
+      <description>&lt;p&gt;Deep learning: A brief walk into the foundations underlying neural networks and deep learning.&lt;/p&gt;
 
 &lt;p&gt;
 &lt;!--.----1----.----2----.----3----.----4----.----5----.----6----.----7----.----8 --&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;neural-networks&#34;&gt;Neural Networks&lt;/h1&gt;
 
-&lt;p&gt;Represenation learning is a set of methods that allows an algorithm automatically
-find the represenations needed for detection or classification.&lt;/p&gt;
+&lt;p&gt;Representation learning is a set of methods that allows an algorithm automatically
+find the Representations needed for detection or classification.&lt;/p&gt;
 
 &lt;h2 id=&#34;historical-notes&#34;&gt;Historical Notes&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Convolutional Networks
-These network architectures came from a power model architecture introduced by the neocognitron (Fukushima, 1980) for processing images and insprired by the strcuture of the mammalian visual system see LeCun et al. (1998).&lt;/p&gt;&lt;/li&gt;
+These network architectures came from a power model architecture introduced by the neocognitron (Fukushima, 1980) for processing images and inspired by the structure of the mammalian visual system see LeCun et al. (1998).&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Rectified linear unit&lt;/p&gt;&lt;/li&gt;
 
@@ -180,7 +161,7 @@ These network architectures came from a power model architecture introduced by t
 &lt;li&gt;&lt;p&gt;Sequence modeling tasks
 An example is natural language processing tasks (used in Google technology)&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Kernerl Machines&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Kernel Machines&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Graphical models&lt;/p&gt;&lt;/li&gt;
 
@@ -192,11 +173,11 @@ An example is natural language processing tasks (used in Google technology)&lt;/
 &lt;p&gt;In machine learning we start out with a concrete problem or challenge. This problem is usually coupled to a dataset. You have arrived to a new level of computing when you are tackling problems at scale and in the core realm of BigData. In other words, now you have to be in tune with your computing resources (e.g, one needs to understand what CPUs and what GPUs are on target computing system).&lt;/p&gt;
 
 &lt;p&gt;Types of learning
-- Represenation learning
+- Representation learning
 - Deep learning
 - Supervised, unsupervised, and semi-supervised learning&lt;/p&gt;
 
-&lt;p&gt;Before we look at the various methods avilable in machine learning for solving problems,
+&lt;p&gt;Before we look at the various methods available in machine learning for solving problems,
 let&amp;rsquo;s start by considering data and the questions around that data motivating our interest.&lt;/p&gt;
 
 &lt;h2 id=&#34;the-data&#34;&gt;The Data&lt;/h2&gt;
@@ -210,11 +191,11 @@ let&amp;rsquo;s start by considering data and the questions around that data mot
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Support Vector Machine
-This algorithm can handle and infinte number of features (or attributes)
+This algorithm can handle and infinite number of features (or attributes)
 SVM is a classification algorithm - the type of question you can ask is
-if something belongs  to a particular class. The objective of this algorithm is to fidn the optimal separtating hyperplane. Think in terms of what is the largest margin we can find on each side of the the line for the given training data.&lt;/p&gt;
+if something belongs  to a particular class. The objective of this algorithm is to find the optimal separating hyperplane. Think in terms of what is the largest margin we can find on each side of the the line for the given training data.&lt;/p&gt;
 
-&lt;p&gt;Is the data linearnly separable, if not, then is do we need nonlinear sepation?&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;Is the data linearly separable, if not, then is do we need nonlinear separation?&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Links
 &lt;a href=&#34;http://www.cs.columbia.edu/~kathy/cs4701/documents/jason_svm_tutorial.pdf&#34;&gt;Kathy at Columbia&lt;/a&gt;
@@ -245,7 +226,7 @@ if something belongs  to a particular class. The objective of this algorithm is 
 
 &lt;h3 id=&#34;mac-mini-with-nvidia-graphics&#34;&gt;Mac Mini with NVIDIA graphics&lt;/h3&gt;
 
-&lt;p&gt;Getting the code&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34;&gt;cuda downloads&lt;/a&gt;
+&lt;p&gt;Getting the code&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34;&gt; CUDA downloads&lt;/a&gt;
 - Specifically getting this image: &lt;a href=&#34;https://developer.nvidia.com/compute/cuda/8.0/Prod/local_installers/cuda_8.0.55_mac-dmg&#34;&gt;CUDA Toolkit dmg&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;working-locally&#34;&gt;Working Locally&lt;/h3&gt;
@@ -350,8 +331,7 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow&#34;&gt;TensorFlow Site&lt;/a&gt; Done&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation&#34;&gt;Run a TensorFlow demo model&lt;/a&gt;
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation&#34;&gt;Run a TensorFlow demo model&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;theano&#34;&gt;Theano&lt;/h2&gt;
@@ -377,14 +357,17 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
       <pubDate>Mon, 26 Sep 2016 13:00:35 -0400</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/hlf/</guid>
-      <description>
+      <description>&lt;p&gt;I received and invitation and funding to attend the &lt;a href=&#34;http://www.heidelberg-laureate-forum.org&#34;&gt;4th Heildelberg Laureate Forum&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- There I got to meet and talk Nobel Laureates and Turin Award winners and an incredible group of young researchers from across the world.&lt;br&gt;&#34; --&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I had an extraordinary opportunity to participate as a young researcher in
 this year&amp;rsquo;s 4th Heidelberg Laureate Forum (Heidelberg, Germany). I came away
 having talked one-on-one with several Turin Award Winners and one Nobel Laureate&lt;/p&gt;
 
-&lt;h2 id=&#34;discovering-hidden-structure&#34;&gt;Discovering Hidden Structure&lt;/h2&gt;
-</description>
+&lt;!-- ## Discovering Hidden Structure --&gt;</description>
     </item>
     
     <item>

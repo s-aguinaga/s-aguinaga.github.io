@@ -7,7 +7,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 -->
 <html>
 	<head>
-		<title>Neural Networks &middot; Sal Aguinaga</title>
+		<title>openACC &middot; Sal Aguinaga</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="Sal Aguinaga">
@@ -49,24 +49,73 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<!-- Main -->
 		<div id="main">
 			
-    
-    
-        <span>
-    <h1>
-        <a href="http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/">ML Notes on Learning and working with DNN</a>
-    </h1>
+	<h1>openACC</h1>
+	<span>
+	    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
+	    <time datetime="2016-12-06 12:01:45 -0500 -0500">2016-12-06</time>&nbsp;&nbsp;
 
-    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
-    <time datetime="2016-11-13 06:53:43 -0500 -0500" itemprop="datePublished">2016-11-13</time>
-</span>
+	    
+	        
+	        
+	    
 
-<p><p>Deep learning: A brief walk into the foundations underlying neural networks and deep learning.</p></p>
-<hr>
+	    
+	       
+	       
+	    
+	</span>
 
-    
+	<p>
+	    <h2 id="parallelize-your-code">Parallelize Your Code</h2>
 
-    
+<ul>
+<li>Benefits:
 
+<ul>
+<li>No involvement of OpenCL, CUDA, etc.</li>
+<li>Source can work on both CPUs (serially) and can be deployed to GPUs</li>
+</ul></li>
+</ul>
+
+<p></p>
+
+<h2 id="directives">Directives</h2>
+
+<p>The directive way approach has shown that one stands to gain by improving the
+performance of code execution.</p>
+
+<p>Give hints to the compiler so it knows what to do.</p>
+
+<p><code>#pragma omp parallel for reduction(+:pi)</code>
+and its equivalent in OpenACC: <code>#pragma acc kernels</code>
+This is something that is usually added right before code that can be highly
+parallelizable. Takes serial code and makes run on GPUs.</p>
+
+<p><code>
+#pragma acc kernels
+</code>
+Put a directive in front of the loops, then the compiler will generate the right
+gpu code.</p>
+
+<h2 id="syntax">Syntax</h2>
+
+<p><code>pragma</code> is a directive of instruction to the compilers.</p>
+
+<p><code>#pragma acc kernels [clause ...]</code>
+is followed by structure blocks such as for loop in C.</p>
+
+<h1 id="c-pointers">C Pointers</h1>
+
+<p>Using keywords like <code>restrict</code></p>
+
+<p><code>float *restrict y</code> when nothing is going to point to <code>y</code>, then
+use restrict.</p>
+
+<p>To activate the directives:
+<code>pgcc -acc -Minfo=accel saxpy.c</code></p>
+	</p>
+
+	
 
 		</div>
 

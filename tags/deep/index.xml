@@ -9,26 +9,26 @@
     <atom:link href="http://s-aguinaga.github.io/tags/deep/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>learning and working with deep nn</title>
+      <title>ML Notes on Learning and working with DNN</title>
       <link>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</link>
       <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
       
       <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
-      <description>&lt;p&gt;Deep learning: A brief walk into the foundations underliing neural networks and deep learning.&lt;/p&gt;
+      <description>&lt;p&gt;Deep learning: A brief walk into the foundations underlying neural networks and deep learning.&lt;/p&gt;
 
 &lt;p&gt;
 &lt;!--.----1----.----2----.----3----.----4----.----5----.----6----.----7----.----8 --&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;neural-networks&#34;&gt;Neural Networks&lt;/h1&gt;
 
-&lt;p&gt;Represenation learning is a set of methods that allows an algorithm automatically
-find the represenations needed for detection or classification.&lt;/p&gt;
+&lt;p&gt;Representation learning is a set of methods that allows an algorithm automatically
+find the Representations needed for detection or classification.&lt;/p&gt;
 
 &lt;h2 id=&#34;historical-notes&#34;&gt;Historical Notes&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Convolutional Networks
-These network architectures came from a power model architecture introduced by the neocognitron (Fukushima, 1980) for processing images and insprired by the strcuture of the mammalian visual system see LeCun et al. (1998).&lt;/p&gt;&lt;/li&gt;
+These network architectures came from a power model architecture introduced by the neocognitron (Fukushima, 1980) for processing images and inspired by the structure of the mammalian visual system see LeCun et al. (1998).&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Rectified linear unit&lt;/p&gt;&lt;/li&gt;
 
@@ -41,7 +41,7 @@ These network architectures came from a power model architecture introduced by t
 &lt;li&gt;&lt;p&gt;Sequence modeling tasks
 An example is natural language processing tasks (used in Google technology)&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Kernerl Machines&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Kernel Machines&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Graphical models&lt;/p&gt;&lt;/li&gt;
 
@@ -53,11 +53,11 @@ An example is natural language processing tasks (used in Google technology)&lt;/
 &lt;p&gt;In machine learning we start out with a concrete problem or challenge. This problem is usually coupled to a dataset. You have arrived to a new level of computing when you are tackling problems at scale and in the core realm of BigData. In other words, now you have to be in tune with your computing resources (e.g, one needs to understand what CPUs and what GPUs are on target computing system).&lt;/p&gt;
 
 &lt;p&gt;Types of learning
-- Represenation learning
+- Representation learning
 - Deep learning
 - Supervised, unsupervised, and semi-supervised learning&lt;/p&gt;
 
-&lt;p&gt;Before we look at the various methods avilable in machine learning for solving problems,
+&lt;p&gt;Before we look at the various methods available in machine learning for solving problems,
 let&amp;rsquo;s start by considering data and the questions around that data motivating our interest.&lt;/p&gt;
 
 &lt;h2 id=&#34;the-data&#34;&gt;The Data&lt;/h2&gt;
@@ -71,11 +71,11 @@ let&amp;rsquo;s start by considering data and the questions around that data mot
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Support Vector Machine
-This algorithm can handle and infinte number of features (or attributes)
+This algorithm can handle and infinite number of features (or attributes)
 SVM is a classification algorithm - the type of question you can ask is
-if something belongs  to a particular class. The objective of this algorithm is to fidn the optimal separtating hyperplane. Think in terms of what is the largest margin we can find on each side of the the line for the given training data.&lt;/p&gt;
+if something belongs  to a particular class. The objective of this algorithm is to find the optimal separating hyperplane. Think in terms of what is the largest margin we can find on each side of the the line for the given training data.&lt;/p&gt;
 
-&lt;p&gt;Is the data linearnly separable, if not, then is do we need nonlinear sepation?&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;Is the data linearly separable, if not, then is do we need nonlinear separation?&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Links
 &lt;a href=&#34;http://www.cs.columbia.edu/~kathy/cs4701/documents/jason_svm_tutorial.pdf&#34;&gt;Kathy at Columbia&lt;/a&gt;
@@ -106,7 +106,7 @@ if something belongs  to a particular class. The objective of this algorithm is 
 
 &lt;h3 id=&#34;mac-mini-with-nvidia-graphics&#34;&gt;Mac Mini with NVIDIA graphics&lt;/h3&gt;
 
-&lt;p&gt;Getting the code&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34;&gt;cuda downloads&lt;/a&gt;
+&lt;p&gt;Getting the code&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34;&gt; CUDA downloads&lt;/a&gt;
 - Specifically getting this image: &lt;a href=&#34;https://developer.nvidia.com/compute/cuda/8.0/Prod/local_installers/cuda_8.0.55_mac-dmg&#34;&gt;CUDA Toolkit dmg&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;working-locally&#34;&gt;Working Locally&lt;/h3&gt;
@@ -211,8 +211,7 @@ and launch Jupyter using the following command, &lt;code&gt;jupyter notebook&amp
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow&#34;&gt;TensorFlow Site&lt;/a&gt; Done&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation&#34;&gt;Run a TensorFlow demo model&lt;/a&gt;
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation&#34;&gt;Run a TensorFlow demo model&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;theano&#34;&gt;Theano&lt;/h2&gt;

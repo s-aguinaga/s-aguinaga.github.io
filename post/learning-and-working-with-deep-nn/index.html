@@ -7,7 +7,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 -->
 <html>
 	<head>
-		<title>learning and working with deep nn &middot; Sal Aguinaga</title>
+		<title>ML Notes on Learning and working with DNN &middot; Sal Aguinaga</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="Sal Aguinaga">
@@ -49,7 +49,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<!-- Main -->
 		<div id="main">
 			
-	<h1>learning and working with deep nn</h1>
+	<h1>ML Notes on Learning and working with DNN</h1>
 	<span>
 	    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
 	    <time datetime="2016-11-13 06:53:43 -0500 -0500">2016-11-13</time>&nbsp;&nbsp;
@@ -67,7 +67,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/neural-networks">neural networks</a>
 	           &middot;
 	           
-	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/artifical">artifical</a>
+	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/artificial">artificial</a>
 	           &middot;
 	           
 	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/recurrent">recurrent</a>
@@ -81,21 +81,21 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	</span>
 
 	<p>
-	    <p>Deep learning: A brief walk into the foundations underliing neural networks and deep learning.</p>
+	    <p>Deep learning: A brief walk into the foundations underlying neural networks and deep learning.</p>
 
 <p>
 <!--.----1----.----2----.----3----.----4----.----5----.----6----.----7----.----8 --></p>
 
 <h1 id="neural-networks">Neural Networks</h1>
 
-<p>Represenation learning is a set of methods that allows an algorithm automatically
-find the represenations needed for detection or classification.</p>
+<p>Representation learning is a set of methods that allows an algorithm automatically
+find the Representations needed for detection or classification.</p>
 
 <h2 id="historical-notes">Historical Notes</h2>
 
 <ul>
 <li><p>Convolutional Networks
-These network architectures came from a power model architecture introduced by the neocognitron (Fukushima, 1980) for processing images and insprired by the strcuture of the mammalian visual system see LeCun et al. (1998).</p></li>
+These network architectures came from a power model architecture introduced by the neocognitron (Fukushima, 1980) for processing images and inspired by the structure of the mammalian visual system see LeCun et al. (1998).</p></li>
 
 <li><p>Rectified linear unit</p></li>
 
@@ -108,7 +108,7 @@ These network architectures came from a power model architecture introduced by t
 <li><p>Sequence modeling tasks
 An example is natural language processing tasks (used in Google technology)</p></li>
 
-<li><p>Kernerl Machines</p></li>
+<li><p>Kernel Machines</p></li>
 
 <li><p>Graphical models</p></li>
 
@@ -120,11 +120,11 @@ An example is natural language processing tasks (used in Google technology)</p><
 <p>In machine learning we start out with a concrete problem or challenge. This problem is usually coupled to a dataset. You have arrived to a new level of computing when you are tackling problems at scale and in the core realm of BigData. In other words, now you have to be in tune with your computing resources (e.g, one needs to understand what CPUs and what GPUs are on target computing system).</p>
 
 <p>Types of learning
-- Represenation learning
+- Representation learning
 - Deep learning
 - Supervised, unsupervised, and semi-supervised learning</p>
 
-<p>Before we look at the various methods avilable in machine learning for solving problems,
+<p>Before we look at the various methods available in machine learning for solving problems,
 let&rsquo;s start by considering data and the questions around that data motivating our interest.</p>
 
 <h2 id="the-data">The Data</h2>
@@ -138,11 +138,11 @@ let&rsquo;s start by considering data and the questions around that data motivat
 
 <ul>
 <li><p>Support Vector Machine
-This algorithm can handle and infinte number of features (or attributes)
+This algorithm can handle and infinite number of features (or attributes)
 SVM is a classification algorithm - the type of question you can ask is
-if something belongs  to a particular class. The objective of this algorithm is to fidn the optimal separtating hyperplane. Think in terms of what is the largest margin we can find on each side of the the line for the given training data.</p>
+if something belongs  to a particular class. The objective of this algorithm is to find the optimal separating hyperplane. Think in terms of what is the largest margin we can find on each side of the the line for the given training data.</p>
 
-<p>Is the data linearnly separable, if not, then is do we need nonlinear sepation?</p></li>
+<p>Is the data linearly separable, if not, then is do we need nonlinear separation?</p></li>
 
 <li><p>Links
 <a href="http://www.cs.columbia.edu/~kathy/cs4701/documents/jason_svm_tutorial.pdf">Kathy at Columbia</a>
@@ -173,7 +173,7 @@ if something belongs  to a particular class. The objective of this algorithm is 
 
 <h3 id="mac-mini-with-nvidia-graphics">Mac Mini with NVIDIA graphics</h3>
 
-<p>Getting the code<a href="https://developer.nvidia.com/cuda-downloads">cuda downloads</a>
+<p>Getting the code<a href="https://developer.nvidia.com/cuda-downloads"> CUDA downloads</a>
 - Specifically getting this image: <a href="https://developer.nvidia.com/compute/cuda/8.0/Prod/local_installers/cuda_8.0.55_mac-dmg">CUDA Toolkit dmg</a></p>
 
 <h3 id="working-locally">Working Locally</h3>
@@ -278,8 +278,7 @@ and launch Jupyter using the following command, <code>jupyter notebook&amp;</cod
 
 <ul>
 <li><a href="https://github.com/tensorflow/tensorflow">TensorFlow Site</a> Done</li>
-<li><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation">Run a TensorFlow demo model</a>
-<br /></li>
+<li><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#test-the-tensorflow-installation">Run a TensorFlow demo model</a></li>
 </ul>
 
 <h2 id="theano">Theano</h2>

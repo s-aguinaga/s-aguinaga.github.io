@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recurrent on Sal Aguinaga</title>
-    <link>http://s-aguinaga.github.io/tags/recurrent/index.xml</link>
-    <description>Recent content in Recurrent on Sal Aguinaga</description>
+    <title>Artificial on Sal Aguinaga</title>
+    <link>http://s-aguinaga.github.io/tags/artificial/index.xml</link>
+    <description>Recent content in Artificial on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://s-aguinaga.github.io/tags/recurrent/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://s-aguinaga.github.io/tags/artificial/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ML Notes on Learning and working with DNN</title>
