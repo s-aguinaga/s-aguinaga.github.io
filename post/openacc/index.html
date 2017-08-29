@@ -91,10 +91,9 @@ and its equivalent in OpenACC: <code>#pragma acc kernels</code>
 This is something that is usually added right before code that can be highly
 parallelizable. Takes serial code and makes run on GPUs.</p>
 
-<p><code>
-#pragma acc kernels
-</code>
-Put a directive in front of the loops, then the compiler will generate the right
+<p><code>#pragma acc kernels</code></p>
+
+<p>Put a directive in front of the loops, then the compiler will generate the right
 gpu code.</p>
 
 <h2 id="syntax">Syntax</h2>
@@ -104,7 +103,7 @@ gpu code.</p>
 <p><code>#pragma acc kernels [clause ...]</code>
 is followed by structure blocks such as for loop in C.</p>
 
-<h1 id="c-pointers">C Pointers</h1>
+<h2 id="c-pointers">C Pointers</h2>
 
 <p>Using keywords like <code>restrict</code></p>
 
@@ -113,6 +112,10 @@ use restrict.</p>
 
 <p>To activate the directives:
 <code>pgcc -acc -Minfo=accel saxpy.c</code></p>
+
+<h1 id="parallel-programming-using-the-multiprocessing-module-in-python">Parallel programming using the Multiprocessing module in Python</h1>
+
+<p>Here, I take a look at the <a href="https://docs.python.org/dev/library/multiprocessing.html">multiprocessing</a> module</p>
 	</p>
 
 	

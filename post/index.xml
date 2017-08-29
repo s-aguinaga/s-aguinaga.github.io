@@ -6,8 +6,181 @@
     <description>Recent content in Posts on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Dec 2016 12:01:45 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 09 Aug 2017 09:19:15 -0500</lastBuildDate>
     <atom:link href="http://s-aguinaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Neural Network Architectures</title>
+      <link>http://s-aguinaga.github.io/post/neuralnetarch/</link>
+      <pubDate>Wed, 09 Aug 2017 09:19:15 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/post/neuralnetarch/</guid>
+      <description>&lt;p&gt;This projects aims to examine the complexity of neural network architectures to leverage structure
+that improves the training phase.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notebook&#34;&gt;Notebook&lt;/h1&gt;
+
+&lt;p&gt;My notes on many things ML and DL&lt;/p&gt;
+
+&lt;h2 id=&#34;conferences&#34;&gt;Conferences&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;International Conference on Learning Representations
+2017 (April 24 - 26, 2017)`&lt;/li&gt;
+&lt;li&gt;AAAI (2 – 7 February  –  New Orleans, Louisiana, USA)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;argonne-ml&#34;&gt;Argonne ML&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;NN Zoo&lt;/li&gt;
+&lt;li&gt;NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT LEARNING,
+Barret Zoph∗, Quoc V. Le (barretzoph, qvl@google.com)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;network-architectures&#34;&gt;Network Architectures&lt;/h2&gt;
+
+&lt;p&gt;-[] NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT LEARNING
+        &lt;a href=&#34;https://openreview.net/pdf?id=r1Ue8Hcxg&#34;&gt;https://openreview.net/pdf?id=r1Ue8Hcxg&lt;/a&gt;
+-   _ &lt;a href=&#34;http://wikicoursenote.com/wiki/Deep_Convolutional_Neural_Networks_For_LVCSR&#34;&gt;Deep Convolutional Neural Networks For LVCSR&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[] Designing Neural Network Architectures using Reinforcement Learning&lt;/li&gt;
+&lt;li&gt;[] Making Neural Programming Architectures Generalize via Recursion&lt;/li&gt;
+&lt;li&gt;[] DSD: Dense-Sparse-Dense Training for Deep Neural Networks&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;[] Introspection:Accelerating Neural Network Training By Learning Weight Evolution&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;[]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Incremental Growth of Semantic Branches on CNNs via Multi-Shot Learning Quanshi Zhang, Ruiming Cao, Ying Nian Wu and Song-Chun Zhu&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Unsupervised Large Graph Embedding Feiping Nie, Wei Zhu and Xuelong Li&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Regularization for Unsupervised Deep Neural Nets Baiyang Wang and Diego Klabjan&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Efficient Hyperparameter Optimization of Deep Learning Algorithms Using Deterministic RBF Surrogates
+Ilija Ilievski, Jiashi Feng, Taimoor Akhtar and Christine Shoemaker&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tunable Sensitivity to Large Errors in Neural Network Training Gil Keren, Sivan Sabato and Björn Schuller&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Understanding the Semantic Structures of Tables with a Hybrid Deep Neural Network Architecture
+Kyosuke Nishida, Kugatsu Sadamitsu, Ryuichiro Higashinaka and Yoshihiro Matsuo&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/1606.04474v1.pdf&#34;&gt;Learning to learn by gradient descent by gradient descent&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Feature engineering - the data you have may have all info that is required by the model, but these
+might not be in a mode that can be leveraged.&lt;/p&gt;
+
+&lt;h2 id=&#34;hyperparameters&#34;&gt;Hyperparameters&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://fastml.com/tuning-hyperparams-fast-with-hyperband/&#34;&gt;Hyperban by fastml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://people.eecs.berkeley.edu/~kjamieson/hyperband.html&#34;&gt;Hyperband at Berkeley&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;basic-definitions&#34;&gt;Basic Definitions&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Affine&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Deep Learning](&lt;a href=&#34;http://neuralnetworksanddeeplearning.com/chap6.html&#34;&gt;http://neuralnetworksanddeeplearning.com/chap6.html&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;DL Bells and Wistles:
+&lt;a href=&#34;http://colinraffel.com/wiki/neural_network_hyperparameters&#34;&gt;Nerual Network Hyperparameters&lt;/a&gt;
+&lt;a href=&#34;http://www.iro.umontreal.ca/~bengioy/papers/YB-tricks.pdf&#34;&gt;Hyper-Parameters&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;It has been shown that the use of computer clusters for hyper-parameter selection can have an important effect on results (Pinto et al., 2009).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We define a hyper-parameter for a learning algorithm A as a value to be selected prior to the ac- tual application of A to the data, a value that is not directly selected by the learning algorithm itself.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Matrices:
+Hessian matrix&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a square matrix of  second-order paritla derivatives of a scalar-valued function or scalar-field.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Gauss-Newton matrix&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fisher information matrix&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;training-time&#34;&gt;Training Time&lt;/h3&gt;
+
+&lt;p&gt;What is a long time? So in reference to standard deep learning tasks when working with
+standard datasets such as MNIST,&lt;/p&gt;
+
+&lt;h3 id=&#34;different-nn-architectures&#34;&gt;Different NN Architectures&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;On ReLU (rectifying linear unit)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stats.stackexchange.com/questions/188083/how-to-know-where-to-put-bias-terms-in-neural-nets&#34;&gt;Dealing with the bias term in NN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See Yoshua Bengio and Yann Dauphin&amp;rsquo;s article Big Neural Networks Waste Capacity, which touches on this issue and explores the diminishing returns issue when constructing bigger or deeper neural networks.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Weigts evolution
+This is an interesting concept.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-interesting-papers&#34;&gt;Other Interesting Papers&lt;/h2&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/carpedm20/simulated-unsupervised-tensorflow&#34;&gt;TensorFlow implementation of &amp;ldquo;Learning from Simulated and Unsupervised Images through Adversarial Training&amp;rdquo;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;frameworks&#34;&gt;Frameworks&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tensorflow.org/tutorials/deep_cnn&#34;&gt;Convolutional Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tensorflow&#34;&gt;tensorflow&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.matroid.com/dlwithtf/chap1-2.pdf&#34;&gt;Getting started with tensorflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tensorflow.org/install/install_mac#ValidateYourInstallation&#34;&gt;validate the installation &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To avoid the warning, let&amp;rsquo;s install tensorflow from source.
+* Dependencies
+    - &lt;code&gt;brew install bazel&lt;/code&gt;
+    - &lt;a href=&#34;https://docs.bazel.build/versions/master/install-os-x.htmlhttps://docs.bazel.build/versions/master/install-os-x.html&#34;&gt;Install Bazel&lt;/a&gt;
+    Once installe, you can upgrade to a newer version of Bazel with:&lt;code&gt;sudo apt-get upgrade bazel&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Warnings
+
+&lt;ul&gt;
+&lt;li&gt;W &lt;code&gt;tensorflow/core/platform/cpu_feature_guard.cc:45&lt;/code&gt; The TensorFlow library wasn&amp;rsquo;t compiled to use SSE4.2 instructions&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Invalid path to CUDA 8.0 toolkit. /usr/local/cuda/lib/libcudart.8.0.dylib cannot be found&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>News Archive</title>
+      <link>http://s-aguinaga.github.io/post/newsarchive/</link>
+      <pubDate>Thu, 22 Jun 2017 09:53:32 -0400</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/post/newsarchive/</guid>
+      <description>&lt;p&gt;Archived news
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mar 2017 - Invited talk at Argonne National Lab&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Mar 2017 - Invited Talk at KPMG&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Jan 2017 - Teaching Assistant for &lt;a href=&#34;https://www3.nd.edu/courses//cse/cse40884.01/www/index.html&#34;&gt;Network Science CSE-40884 / 60884&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Nov 2016 - Paper with Aastha Nigam (she is first author) and Nitesh V. Chawla &lt;a href=&#34;http://besc-conf.org/2016/accepted_papers.html&#34;&gt;BESC&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Oct 2016 - Presented research paper @ &lt;a href=&#34;http://www.cikm2016.org/&#34;&gt;CIKM2016&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Sep 2016 - Funding award to attend the &lt;a href=&#34;http://www.heidelberg-laureate-forum.org&#34;&gt;4th Heildelberg Laureate Forum&lt;/a&gt; where I got to meet and talk Nobel Laureates and Turin Award winners and an incredible group of young researchers from across the world.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Sep 2016 - Attended the &lt;a href=&#34;http://people.cs.uchicago.edu/~aelmore/mbdoc.html&#34;&gt;Midwest Big Data Opportunities and Challenges Workshop&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Aug 2016 - Presented an accepted paper and poster at &lt;a href=&#34;http://www.mlgworkshop.org/2016&#34;&gt;12th International Workshop on Mining and Learning with Graphs&lt;/a&gt; held in conjuction with KDD16&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>openACC</title>
@@ -40,10 +213,9 @@ and its equivalent in OpenACC: &lt;code&gt;#pragma acc kernels&lt;/code&gt;
 This is something that is usually added right before code that can be highly
 parallelizable. Takes serial code and makes run on GPUs.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-#pragma acc kernels
-&lt;/code&gt;
-Put a directive in front of the loops, then the compiler will generate the right
+&lt;p&gt;&lt;code&gt;#pragma acc kernels&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Put a directive in front of the loops, then the compiler will generate the right
 gpu code.&lt;/p&gt;
 
 &lt;h2 id=&#34;syntax&#34;&gt;Syntax&lt;/h2&gt;
@@ -53,7 +225,7 @@ gpu code.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;#pragma acc kernels [clause ...]&lt;/code&gt;
 is followed by structure blocks such as for loop in C.&lt;/p&gt;
 
-&lt;h1 id=&#34;c-pointers&#34;&gt;C Pointers&lt;/h1&gt;
+&lt;h2 id=&#34;c-pointers&#34;&gt;C Pointers&lt;/h2&gt;
 
 &lt;p&gt;Using keywords like &lt;code&gt;restrict&lt;/code&gt;&lt;/p&gt;
 
@@ -61,7 +233,11 @@ is followed by structure blocks such as for loop in C.&lt;/p&gt;
 use restrict.&lt;/p&gt;
 
 &lt;p&gt;To activate the directives:
-&lt;code&gt;pgcc -acc -Minfo=accel saxpy.c&lt;/code&gt;&lt;/p&gt;</description>
+&lt;code&gt;pgcc -acc -Minfo=accel saxpy.c&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;parallel-programming-using-the-multiprocessing-module-in-python&#34;&gt;Parallel programming using the Multiprocessing module in Python&lt;/h1&gt;
+
+&lt;p&gt;Here, I take a look at the &lt;a href=&#34;https://docs.python.org/dev/library/multiprocessing.html&#34;&gt;multiprocessing&lt;/a&gt; module&lt;/p&gt;</description>
     </item>
     
     <item>
