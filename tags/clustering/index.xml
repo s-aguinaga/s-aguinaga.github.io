@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clustering on Sal Aguinaga</title>
-    <link>http://s-aguinaga.github.io/tags/clustering/index.xml</link>
+    <link>http://s-aguinaga.github.io/tags/clustering/</link>
     <description>Recent content in Clustering on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://s-aguinaga.github.io/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2017 11:22:40 -0500</lastBuildDate>
+    
+	<atom:link href="http://s-aguinaga.github.io/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Modularity</title>
@@ -16,69 +19,7 @@
       <guid>http://s-aguinaga.github.io/post/modularity/</guid>
       <description>&lt;p&gt;In graph mining the concept of dividing the nodes of a network into groups or
 communities as part of a clustering exercise is also called modularity. How well
-graph generators preserve modularity?&lt;/p&gt;
-
-&lt;p&gt;
-&lt;!--.----1----.----2----.----3----.----4----.----5----.----6----.----7----.----8 --&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-
-&lt;h1 id=&#34;related-work&#34;&gt;Related Work&lt;/h1&gt;
-
-&lt;h1 id=&#34;methods&#34;&gt;Methods&lt;/h1&gt;
-
-&lt;h2 id=&#34;communities-in-networks&#34;&gt;Communities in Networks&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Modularity maximization and Maximum Likelihood&lt;/li&gt;
-&lt;li&gt;Statistical Infrerence&lt;/li&gt;
-&lt;li&gt;Degree-correlated block model&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;community-formation-detection&#34;&gt;Community formation detection&lt;/h2&gt;
-
-&lt;p&gt;Identifiying communities may offer insight on how the network
-is organized.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;vertices&lt;/li&gt;
-&lt;li&gt;graph partitioning&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;overlapping-communitites&#34;&gt;Overlapping Communitites&lt;/h2&gt;
-
-&lt;p&gt;It is not unusual for communities to overlap at their boundaries.&lt;/p&gt;
-
-&lt;p&gt;Finding cliques is an NP-complete problem (Bomze et al., 1999); a popular technique is the Bron–Kerbosch method (Bron and Kerbosch, 1973).&lt;/p&gt;
-
-&lt;h2 id=&#34;planted-partition-model-and-modularity-maximization&#34;&gt;Planted Partition Model and Modularity Maximization&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Value of the resolution Parameter&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Q = 1/m (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; Sum_ij (A_ij - Pij)\delta gigj&lt;/p&gt;
-
-&lt;h1 id=&#34;links-and-references&#34;&gt;Links and References&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kateto.net/networks-r-igraph&#34;&gt;Working with Networks by kateto&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/24255143/graph-theory-in-networkx&#34;&gt;http://stackoverflow.com/questions/24255143/graph-theory-in-networkx&lt;/a&gt;
-&lt;a href=&#34;http://stackoverflow.com/questions/29897243/graph-modularity-in-python-networkx&#34;&gt;http://stackoverflow.com/questions/29897243/graph-modularity-in-python-networkx&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;c-and-r&#34;&gt;C and R&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.sixhat.net/finding-communities-in-networks-with-r-and-igraph.html&#34;&gt;http://www.sixhat.net/finding-communities-in-networks-with-r-and-igraph.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://igraph.org/r/doc/modularity.igraph.html&#34;&gt;http://igraph.org/r/doc/modularity.igraph.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/usc-cloud/parallel-louvain-modularity/blob/master/QuickStart.md&#34;&gt;Parallel Louvian Modularity&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;</description>
+graph generators preserve modularity?&lt;/p&gt;</description>
     </item>
     
   </channel>
