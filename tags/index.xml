@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sal Aguinaga</title>
+    <link>http://s-aguinaga.github.io/tags/</link>
+    <description>Recent content in Tags on Sal Aguinaga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Nov 2016 06:53:43 -0500</lastBuildDate>
+    
+	<atom:link href="http://s-aguinaga.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Artificial</title>
+      <link>http://s-aguinaga.github.io/tags/artificial/</link>
+      <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/artificial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>http://s-aguinaga.github.io/tags/clustering/</link>
+      <pubDate>Mon, 02 Jan 2017 11:22:40 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community Detection</title>
+      <link>http://s-aguinaga.github.io/tags/community-detection/</link>
+      <pubDate>Mon, 02 Jan 2017 11:22:40 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/community-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep</title>
+      <link>http://s-aguinaga.github.io/tags/deep/</link>
+      <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/deep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph Mining</title>
+      <link>http://s-aguinaga.github.io/tags/graph-mining/</link>
+      <pubDate>Mon, 02 Jan 2017 11:22:40 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/graph-mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph Theory</title>
+      <link>http://s-aguinaga.github.io/tags/graph-theory/</link>
+      <pubDate>Mon, 02 Jan 2017 11:22:40 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/graph-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modularity</title>
+      <link>http://s-aguinaga.github.io/tags/modularity/</link>
+      <pubDate>Mon, 02 Jan 2017 11:22:40 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/modularity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Networks</title>
+      <link>http://s-aguinaga.github.io/tags/neural-networks/</link>
+      <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recurrent</title>
+      <link>http://s-aguinaga.github.io/tags/recurrent/</link>
+      <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
+      
+      <guid>http://s-aguinaga.github.io/tags/recurrent/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
