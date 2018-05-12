@@ -1,0 +1,15 @@
+---
+title: "Graph Libraries"
+date: 2018-03-03T10:00:38-05:00
+draft: true
+---
+# Graph Libraries 
+
+## Graph-Tool
+
+I relied on these [instructions][1] to get graph-tool installed natively on macOS (Sierra).
+
+
+# References
+[1]:http://main-discussion-list-for-the-graph-tool-project.982480.n3.nabble.com/Problems-installing-graph-tool-with-homebrew-and-python3-on-macOS-Sierra-td4027450.html
+[2]:
