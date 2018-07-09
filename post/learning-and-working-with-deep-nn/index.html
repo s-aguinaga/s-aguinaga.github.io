@@ -1,87 +1,124 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>ML Notes on Learning and working with DNN</title>
+<meta name="description" content="Sal Aguinaga&#39;s Homepage">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="https://s-aguinaga.github.io/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://s-aguinaga.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://s-aguinaga.github.io/css/owl.carousel.css">
+<link rel="stylesheet" href="https://s-aguinaga.github.io/css/owl.theme.css">
 
-<!-- 
-Strata by HTML5 UP
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>ML Notes on Learning and working with DNN &middot; Sal Aguinaga</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="author" content="Sal Aguinaga">
-    	<meta name="description" content="I&#39;m drowning in the world&#39;s data!">
-    	<meta http-equiv="content-language" content="en-us" />
 
-		<meta name="generator" content="Hugo 0.30.2" />
+  <link href="https://s-aguinaga.github.io/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
 
-		<!--[if lte IE 8]><script src='{{ .Site.BaseURL }}js/ie/html5shiv.js'></script><![endif]-->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
-		<link rel="stylesheet" href="http://s-aguinaga.github.io/css/main.css" />
-		<!--[if lte IE 8]><link rel='stylesheet' href='{{ .Site.BaseURL }}/css/ie8.css' /><![endif]-->
+ 
 
-		
-	</head>
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
 
-	<body id="top">
-		<!-- Header -->
-<header id="header">
-	<a href="http://s-aguinaga.github.io/" class="image avatar"><img src="http://s-aguinaga.github.io/images/avatar.jpg" alt="" /></a>
+
+<link href="https://s-aguinaga.github.io/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://s-aguinaga.github.io/img/favicon.png">
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-35842456-1', 'auto');
 	
-		<h1>PhD candidate, Department of Computer Science and Engineering at the <a href="http://cse.nd.edu">University of Notre Dame</a>.</h1>
-	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
-	
-		<nav id="sidebar">
-			<ul>
-			
-				<li><a href="http://s-aguinaga.github.io/post/">Blog</a></li>
-			
-				<li><a href="http://s-aguinaga.github.io/">Home</a></li>
-			
-			</ul>
-		</nav>
-	
-</header>
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="https://s-aguinaga.github.io/">Sal Aguinaga</a></h1>
+    
+      <p class="sidebar-p">Computer scientist currently working on AI knowledge representation & reasoning using unique ML combined with NLP and advanced knowledge graphs for applications to cognitive/semantic search and insight analysis from mostly unstructured data.</p>
+    
+      <p class="sidebar-p">Currently based in Northern Indiana</p>
+    
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="https://s-aguinaga.github.io/portfolio/">Home</a></li>
+      
+        <li><a href="https://s-aguinaga.github.io/about/">About</a></li>
+      
+        <li><a href="https://s-aguinaga.github.io/pubs/">Pubs</a></li>
+      
+    </ul>
+    <p class="social">
+  
+  
+  
+  <a href="https://www.twitter.com/abitofalchemy/" data-animate-hover="pulse" class="external twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+  
+  
+  
+  
+  <a href="https://www.linkedin.com/in/saguinag/" data-animate-hover="pulse" class="external">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  
+  
+  <a href="https://stackoverflow.com/users/633182/saguinaga" data-animate-hover="pulse" class="external">
+    <i class="fa fa-stack-overflow"></i>
+  </a>
+  
+  
+  <a href="https://www.github.com/abitofalchemy/" data-animate-hover="pulse" class="external">
+    <i class="fa fa-github"></i>
+  </a>
+  
+  
+</p>
 
 
-		<!-- Main -->
-		<div id="main">
-			
-	<h1>ML Notes on Learning and working with DNN</h1>
-	<span>
-	    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
-	    <time datetime="2016-11-13 06:53:43 -0500 EST">2016-11-13</time>&nbsp;&nbsp;
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2017-2018 Sal Aguinaga
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
 
-	    
-	        
-	        
-	    
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
 
-	    
-	       
-	       
-	           &nbsp;&nbsp;<i class="fa fa-tags"></i>&nbsp;&nbsp;
-	           
-	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/neural-networks">neural networks</a>
-	           &middot;
-	           
-	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/artificial">artificial</a>
-	           &middot;
-	           
-	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/recurrent">recurrent</a>
-	           &middot;
-	           
-	           <a class="article-category-link" href="http://s-aguinaga.github.io/tags/deep">deep</a>
-	           
-	           
-	       
-	    
-	</span>
+      </p>
+    </div>
+  </div>
+</div>
 
-	<p>
-	    <p>Deep learning: A brief walk into the foundations underlying neural networks and deep learning.</p>
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="https://s-aguinaga.github.io/">Sal Aguinaga</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>ML Notes on Learning and working with DNN</h1>
+         <p>Deep learning: A brief walk into the foundations underlying neural networks and deep learning.</p>
 
 <p>
 <!--.----1----.----2----.----3----.----4----.----5----.----6----.----7----.----8 --></p>
@@ -296,58 +333,43 @@ and launch Jupyter using the following command, <code>jupyter notebook&amp;</cod
 <h3 id="examples">Examples</h3>
 
 <p><a href="../../pages/BabyTheano.html">Baby Steps</a></p>
-	</p>
-
-	
-
-		</div>
-
-		<!-- Footer -->
-<footer id="footer">
-	<ul class="icons">
-		
-		
-		
-		<li><a href="//twitter.com/abitofalchemy" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-		
-		
-		<li><a href="//github.com/abitofalchemy" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-		
-		
-		<li><a href="https://www.linkedin.com/in/saguinag" target="_blank" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
-		
-		
-		
-		
-		<li><a href="#contact-form" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-		
-	</ul>
-
-	<ul class="copyright">
-		
-		<li>&copy; S. Aguinaga | Design: <a href="//html5up.net">HTML5 UP</a></li>
-		
-	</ul>
-</footer>
-
-<!-- Scripts -->
-<script src="http://s-aguinaga.github.io/js/jquery.min.js"></script>
-<script src="http://s-aguinaga.github.io/js/jquery.poptrox.min.js"></script>
-<script src="http://s-aguinaga.github.io/js/skel.min.js"></script>
-<script src="http://s-aguinaga.github.io/js/util.js"></script>
-
-<script src="http://s-aguinaga.github.io/js/main.js"></script>
-
-
+         <div id="disqus_thread"></div>
 <script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-35842456-1', 'auto');
-ga('send', 'pageview');
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "saguinag" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</div>
 
+          </div>
+      </div>
+  </div>
+  <script src="https://s-aguinaga.github.io/js/jquery.min.js"></script>
+<script src="https://s-aguinaga.github.io/js/bootstrap.min.js"></script>
+<script src="https://s-aguinaga.github.io/js/jquery.cookie.js"> </script>
+<script src="https://s-aguinaga.github.io/js/ekko-lightbox.js"></script>
+<script src="https://s-aguinaga.github.io/js/jquery.scrollTo.min.js"></script>
+<script src="https://s-aguinaga.github.io/js/masonry.pkgd.min.js"></script>
+<script src="https://s-aguinaga.github.io/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://s-aguinaga.github.io/js/owl.carousel.min.js"></script>
+<script src="https://s-aguinaga.github.io/js/front.js"></script>
 
-
-
-	</body>
+</body>
 </html>

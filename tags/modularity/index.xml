@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modularity on Sal Aguinaga</title>
-    <link>http://s-aguinaga.github.io/tags/modularity/</link>
+    <link>https://s-aguinaga.github.io/tags/modularity/</link>
     <description>Recent content in Modularity on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Jan 2017 11:22:40 -0500</lastBuildDate>
     
-	<atom:link href="http://s-aguinaga.github.io/tags/modularity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://s-aguinaga.github.io/tags/modularity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Modularity</title>
-      <link>http://s-aguinaga.github.io/post/modularity/</link>
+      <link>https://s-aguinaga.github.io/post/modularity/</link>
       <pubDate>Mon, 02 Jan 2017 11:22:40 -0500</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/modularity/</guid>
+      <guid>https://s-aguinaga.github.io/post/modularity/</guid>
       <description>&lt;p&gt;In graph mining the concept of dividing the nodes of a network into groups or
 communities as part of a clustering exercise is also called modularity. How well
 graph generators preserve modularity?&lt;/p&gt;</description>

@@ -3,113 +3,183 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://s-aguinaga.github.io/post/neuralnetarch/</loc>
+    <loc>https://s-aguinaga.github.io/portfolio/work2/</loc>
+    <lastmod>2018-07-08T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/portfolio/work3/</loc>
+    <lastmod>2016-11-05T19:44:32+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/portfolio/work4/</loc>
+    <lastmod>2016-11-05T19:50:47+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/portfolio/work5/</loc>
+    <lastmod>2016-11-05T19:53:42+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/portfolio/work7/</loc>
+    <lastmod>2016-11-05T19:57:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/portfolio/work10/</loc>
+    <lastmod>2016-11-05T20:22:08+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/portfolio/work11/</loc>
+    <lastmod>2016-11-05T20:23:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/about/</loc>
+    <lastmod>2018-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/pubs/</loc>
+    <lastmod>2018-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/post/featurevecs/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/post/neuralnetarch/</loc>
     <lastmod>2017-08-09T09:19:15-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/post/newsarchive/</loc>
+    <loc>https://s-aguinaga.github.io/post/newsarchive/</loc>
     <lastmod>2017-06-22T09:53:32-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/post/ble_development/</loc>
+    <loc>https://s-aguinaga.github.io/post/ble_development/</loc>
     <lastmod>2017-05-24T15:14:07-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/post/modularity/</loc>
+    <loc>https://s-aguinaga.github.io/post/modularity/</loc>
     <lastmod>2017-01-02T11:22:40-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/post/openacc/</loc>
+    <loc>https://s-aguinaga.github.io/post/openacc/</loc>
     <lastmod>2016-12-06T12:01:45-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</loc>
+    <loc>https://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</loc>
     <lastmod>2016-11-13T06:53:43-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/post/welcome/</loc>
+    <loc>https://s-aguinaga.github.io/contact/</loc>
+    <lastmod>2016-11-06T13:00:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/portfolio/work1/</loc>
+    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/post/welcome/</loc>
     <lastmod>2016-08-28T07:07:23-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/artificial/</loc>
+    <loc>https://s-aguinaga.github.io/post/development/</loc>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/tags/artificial/</loc>
     <lastmod>2016-11-13T06:53:43-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/categories/</loc>
+    <loc>https://s-aguinaga.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/clustering/</loc>
+    <loc>https://s-aguinaga.github.io/tags/clustering/</loc>
     <lastmod>2017-01-02T11:22:40-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/community-detection/</loc>
+    <loc>https://s-aguinaga.github.io/tags/community-detection/</loc>
     <lastmod>2017-01-02T11:22:40-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/deep/</loc>
+    <loc>https://s-aguinaga.github.io/tags/deep/</loc>
     <lastmod>2016-11-13T06:53:43-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/graph-mining/</loc>
+    <loc>https://s-aguinaga.github.io/tags/graph-mining/</loc>
     <lastmod>2017-01-02T11:22:40-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/graph-theory/</loc>
+    <loc>https://s-aguinaga.github.io/tags/graph-theory/</loc>
     <lastmod>2017-01-02T11:22:40-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/modularity/</loc>
+    <loc>https://s-aguinaga.github.io/tags/modularity/</loc>
     <lastmod>2017-01-02T11:22:40-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/neural-networks/</loc>
+    <loc>https://s-aguinaga.github.io/tags/neural-networks/</loc>
     <lastmod>2016-11-13T06:53:43-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/post/</loc>
-    <lastmod>2017-08-09T09:19:15-05:00</lastmod>
+    <loc>https://s-aguinaga.github.io/portfolio/</loc>
+    <lastmod>2018-07-08T19:41:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/recurrent/</loc>
+    <loc>https://s-aguinaga.github.io/post/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://s-aguinaga.github.io/tags/recurrent/</loc>
     <lastmod>2016-11-13T06:53:43-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/</loc>
-    <lastmod>2017-08-09T09:19:15-05:00</lastmod>
+    <loc>https://s-aguinaga.github.io/</loc>
+    <lastmod>2018-07-08T19:41:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://s-aguinaga.github.io/tags/</loc>
+    <loc>https://s-aguinaga.github.io/tags/</loc>
     <lastmod>2016-11-13T06:53:43-05:00</lastmod>
     <priority>0</priority>
   </url>

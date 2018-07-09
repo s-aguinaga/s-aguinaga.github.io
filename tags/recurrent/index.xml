@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recurrent on Sal Aguinaga</title>
-    <link>http://s-aguinaga.github.io/tags/recurrent/</link>
+    <link>https://s-aguinaga.github.io/tags/recurrent/</link>
     <description>Recent content in Recurrent on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Nov 2016 06:53:43 -0500</lastBuildDate>
     
-	<atom:link href="http://s-aguinaga.github.io/tags/recurrent/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://s-aguinaga.github.io/tags/recurrent/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ML Notes on Learning and working with DNN</title>
-      <link>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</link>
+      <link>https://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</link>
       <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
+      <guid>https://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
       <description>&lt;p&gt;Deep learning: A brief walk into the foundations underlying neural networks and deep learning.&lt;/p&gt;</description>
     </item>
     

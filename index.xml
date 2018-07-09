@@ -2,21 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sal Aguinaga</title>
-    <link>http://s-aguinaga.github.io/</link>
+    <link>https://s-aguinaga.github.io/</link>
     <description>Recent content on Sal Aguinaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Aug 2017 09:19:15 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jul 2018 19:41:01 +0530</lastBuildDate>
     
-	<atom:link href="http://s-aguinaga.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://s-aguinaga.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Generating Graphs Using HRGs</title>
+      <link>https://s-aguinaga.github.io/portfolio/work2/</link>
+      <pubDate>Sun, 08 Jul 2018 19:41:01 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work2/</guid>
+      <description>&lt;p&gt;Developed and evaluated a new approach that learns the building blocks of graphs that can be used to understand and generate new realistic graphs.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Latent-Variable Probabilistic Graph Grammars</title>
+      <link>https://s-aguinaga.github.io/portfolio/work3/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work3/</guid>
+      <description>&lt;p&gt;Adding latent variables to an HRG model, trained using Expectation-Maximization, generates graphs that generalize better to test data.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Infinity Mirror Test</title>
+      <link>https://s-aguinaga.github.io/portfolio/work4/</link>
+      <pubDate>Sat, 05 Nov 2016 19:50:47 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work4/</guid>
+      <description>&lt;p&gt;We introduce the &lt;em&gt;infinity mirror test&lt;/em&gt;
+for the analysis of graph generator performance and robustness when working with empirical networks.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Principled Structure Extraction as a Model for Network Growth</title>
+      <link>https://s-aguinaga.github.io/portfolio/work5/</link>
+      <pubDate>Sat, 05 Nov 2016 19:53:42 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work5/</guid>
+      <description>&lt;p&gt;Salvador Aguinaga, Corey Pennycuff and Tim Weninger, NetSci Conference, Indianapolis, IN, June 21-23, 2017. (Poster)
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CatPath: navigating concept graphs</title>
+      <link>https://s-aguinaga.github.io/portfolio/work7/</link>
+      <pubDate>Sat, 05 Nov 2016 19:57:40 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work7/</guid>
+      <description>&lt;p&gt;What is the concept net or category hierarchy we navigate to connect different ideas together?
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NLP ML with Spacy and Scikit-learn</title>
+      <link>https://s-aguinaga.github.io/portfolio/work10/</link>
+      <pubDate>Sat, 05 Nov 2016 20:22:08 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work10/</guid>
+      <description>&lt;p&gt;Building dependency graphs with Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Graph contraction</title>
+      <link>https://s-aguinaga.github.io/portfolio/work11/</link>
+      <pubDate>Sat, 05 Nov 2016 20:23:59 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work11/</guid>
+      <description>&lt;p&gt;Graph algorithms that contract graphs according to a specific feature. This is similar to dimensionality reduction. These type of algorithms lend themselves to &lt;a href=&#34;http://www.cs.cmu.edu/afs/cs/academic/class/15210-f12/www/lectures/lecture16.pdf&#34;&gt;parallelization&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Feature Vectors from Graphs</title>
+      <link>https://s-aguinaga.github.io/post/featurevecs/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/post/featurevecs/</guid>
+      <description>&lt;p&gt;Examine well known methods of extracting and feature vectors from graphs.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Neural Network Architectures</title>
-      <link>http://s-aguinaga.github.io/post/neuralnetarch/</link>
+      <link>https://s-aguinaga.github.io/post/neuralnetarch/</link>
       <pubDate>Wed, 09 Aug 2017 09:19:15 -0500</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/neuralnetarch/</guid>
+      <guid>https://s-aguinaga.github.io/post/neuralnetarch/</guid>
       <description>&lt;p&gt;This projects aims to examine the complexity of neural network architectures to leverage structure
 that improves the training phase.&lt;/p&gt;
 
@@ -25,20 +111,20 @@ that improves the training phase.&lt;/p&gt;
     
     <item>
       <title>News Archive</title>
-      <link>http://s-aguinaga.github.io/post/newsarchive/</link>
+      <link>https://s-aguinaga.github.io/post/newsarchive/</link>
       <pubDate>Thu, 22 Jun 2017 09:53:32 -0400</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/newsarchive/</guid>
+      <guid>https://s-aguinaga.github.io/post/newsarchive/</guid>
       <description>&lt;p&gt;Archived news
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>BLE Development (My Notes)</title>
-      <link>http://s-aguinaga.github.io/post/ble_development/</link>
+      <link>https://s-aguinaga.github.io/post/ble_development/</link>
       <pubDate>Wed, 24 May 2017 15:14:07 -0400</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/ble_development/</guid>
+      <guid>https://s-aguinaga.github.io/post/ble_development/</guid>
       <description>&lt;p&gt;Audio over BLE  New Project&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -46,10 +132,10 @@ that improves the training phase.&lt;/p&gt;
     
     <item>
       <title>Modularity</title>
-      <link>http://s-aguinaga.github.io/post/modularity/</link>
+      <link>https://s-aguinaga.github.io/post/modularity/</link>
       <pubDate>Mon, 02 Jan 2017 11:22:40 -0500</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/modularity/</guid>
+      <guid>https://s-aguinaga.github.io/post/modularity/</guid>
       <description>&lt;p&gt;In graph mining the concept of dividing the nodes of a network into groups or
 communities as part of a clustering exercise is also called modularity. How well
 graph generators preserve modularity?&lt;/p&gt;</description>
@@ -57,10 +143,10 @@ graph generators preserve modularity?&lt;/p&gt;</description>
     
     <item>
       <title>openACC (My Notes)</title>
-      <link>http://s-aguinaga.github.io/post/openacc/</link>
+      <link>https://s-aguinaga.github.io/post/openacc/</link>
       <pubDate>Tue, 06 Dec 2016 12:01:45 -0500</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/openacc/</guid>
+      <guid>https://s-aguinaga.github.io/post/openacc/</guid>
       <description>&lt;h2 id=&#34;parallelize-your-code&#34;&gt;Parallelize Your Code&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -77,19 +163,29 @@ graph generators preserve modularity?&lt;/p&gt;</description>
     
     <item>
       <title>ML Notes on Learning and working with DNN</title>
-      <link>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</link>
+      <link>https://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</link>
       <pubDate>Sun, 13 Nov 2016 06:53:43 -0500</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
+      <guid>https://s-aguinaga.github.io/post/learning-and-working-with-deep-nn/</guid>
       <description>&lt;p&gt;Deep learning: A brief walk into the foundations underlying neural networks and deep learning.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>PhD Thesis Topic</title>
+      <link>https://s-aguinaga.github.io/portfolio/work1/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Generating Networks by Learning Hyperedge Replacement Grammars&lt;/strong&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Welcome</title>
-      <link>http://s-aguinaga.github.io/post/welcome/</link>
+      <link>https://s-aguinaga.github.io/post/welcome/</link>
       <pubDate>Sun, 28 Aug 2016 07:07:23 -0400</pubDate>
       
-      <guid>http://s-aguinaga.github.io/post/welcome/</guid>
+      <guid>https://s-aguinaga.github.io/post/welcome/</guid>
       <description>&lt;p&gt;The purpose of this Web-site is to tell you about my research interests, the projects
 I am involved in, the things I make, and a little about who I am.
 &lt;/br&gt;
@@ -97,6 +193,15 @@ Connect with me via:
 &lt;a href=&#34;www.linkedin.com/in/sauginag&#34;&gt;LinkedIn&lt;/a&gt; | &lt;a href=&#34;https://twitter.com/abitofalchemy&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://s-aguinaga.github.io/post/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/post/development/</guid>
+      <description> Develpment Notes MacOS Python as a Framework </description>
     </item>
     
   </channel>

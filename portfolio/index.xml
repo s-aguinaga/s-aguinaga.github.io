@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolios on Sal Aguinaga</title>
+    <link>https://s-aguinaga.github.io/portfolio/</link>
+    <description>Recent content in Portfolios on Sal Aguinaga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Jul 2018 19:41:01 +0530</lastBuildDate>
+    
+	<atom:link href="https://s-aguinaga.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generating Graphs Using HRGs</title>
+      <link>https://s-aguinaga.github.io/portfolio/work2/</link>
+      <pubDate>Sun, 08 Jul 2018 19:41:01 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work2/</guid>
+      <description>&lt;p&gt;Developed and evaluated a new approach that learns the building blocks of graphs that can be used to understand and generate new realistic graphs.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Latent-Variable Probabilistic Graph Grammars</title>
+      <link>https://s-aguinaga.github.io/portfolio/work3/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work3/</guid>
+      <description>&lt;p&gt;Adding latent variables to an HRG model, trained using Expectation-Maximization, generates graphs that generalize better to test data.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Infinity Mirror Test</title>
+      <link>https://s-aguinaga.github.io/portfolio/work4/</link>
+      <pubDate>Sat, 05 Nov 2016 19:50:47 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work4/</guid>
+      <description>&lt;p&gt;We introduce the &lt;em&gt;infinity mirror test&lt;/em&gt;
+for the analysis of graph generator performance and robustness when working with empirical networks.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Principled Structure Extraction as a Model for Network Growth</title>
+      <link>https://s-aguinaga.github.io/portfolio/work5/</link>
+      <pubDate>Sat, 05 Nov 2016 19:53:42 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work5/</guid>
+      <description>&lt;p&gt;Salvador Aguinaga, Corey Pennycuff and Tim Weninger, NetSci Conference, Indianapolis, IN, June 21-23, 2017. (Poster)
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CatPath: navigating concept graphs</title>
+      <link>https://s-aguinaga.github.io/portfolio/work7/</link>
+      <pubDate>Sat, 05 Nov 2016 19:57:40 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work7/</guid>
+      <description>&lt;p&gt;What is the concept net or category hierarchy we navigate to connect different ideas together?
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NLP ML with Spacy and Scikit-learn</title>
+      <link>https://s-aguinaga.github.io/portfolio/work10/</link>
+      <pubDate>Sat, 05 Nov 2016 20:22:08 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work10/</guid>
+      <description>&lt;p&gt;Building dependency graphs with Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Graph contraction</title>
+      <link>https://s-aguinaga.github.io/portfolio/work11/</link>
+      <pubDate>Sat, 05 Nov 2016 20:23:59 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work11/</guid>
+      <description>&lt;p&gt;Graph algorithms that contract graphs according to a specific feature. This is similar to dimensionality reduction. These type of algorithms lend themselves to &lt;a href=&#34;http://www.cs.cmu.edu/afs/cs/academic/class/15210-f12/www/lectures/lecture16.pdf&#34;&gt;parallelization&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PhD Thesis Topic</title>
+      <link>https://s-aguinaga.github.io/portfolio/work1/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>https://s-aguinaga.github.io/portfolio/work1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Generating Networks by Learning Hyperedge Replacement Grammars&lt;/strong&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
